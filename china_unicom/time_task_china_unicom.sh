@@ -2,4 +2,4 @@
 
 # 让控制台进入到当前文件所在的目录
 cd `dirname $0` || exit 1
-/usr/local/anaconda3/bin/python china_unicom_execute.py >> ~/china_unicom/spider.log 2>&1
+/usr/local/anaconda3/bin/python china_unicom_execute.py >> ~/china_unicom/spiderr.log 2>&1
