@@ -57,7 +57,7 @@ class ChinaMobilePurcnoticeSpider(scrapy.Spider):
 
     def start_requests(self):
         # 采购公告url  (用于post请求)  页码总数11436页 每天数据量跨度11~15页左右 设置21页
-        for page in range(1, 21):
+        for page in range(1, 31):
             data = {
                 'page.currentPage': str(page),
                 'page.perPageSize': '20',
@@ -99,7 +99,7 @@ class ChinaMobilePurcnoticeSpider(scrapy.Spider):
             )
 
         # 候选人公示 总页数5356    每天数据跨度7~10页 设置11页
-        for page in range(1, 11):
+        for page in range(1, 21):
             data = {
                 'page.currentPage': str(page),
                 'page.perPageSize': '20',
@@ -120,7 +120,7 @@ class ChinaMobilePurcnoticeSpider(scrapy.Spider):
             )
 
         # 中标结果 总页数637    每天数据跨度9~12页 设置12页
-        for page in range(1, 12):
+        for page in range(1, 21):
             data = {
                 'page.currentPage': str(page),
                 'page.perPageSize': '20',
@@ -142,7 +142,7 @@ class ChinaMobilePurcnoticeSpider(scrapy.Spider):
 
 
         # 单一来源采购信息公告 总页数3308    每天数据跨度9~12页  设置12页
-        for page in range(1, 12):
+        for page in range(1, 21):
             data = {
                 'page.currentPage': str(page),
                 'page.perPageSize': '20',

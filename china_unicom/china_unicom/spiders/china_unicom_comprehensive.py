@@ -36,7 +36,7 @@ class ChinaUnicomConprehensiveSpider(scrapy.Spider):
 
     def start_requests(self):
         # 招标公告 总共5900页 每天跨度22~30页
-        for page in range(1, 21):
+        for page in range(1, 51):
             items = {}
             items['type_id'] = '38255'
             yield scrapy.Request(
@@ -45,7 +45,7 @@ class ChinaUnicomConprehensiveSpider(scrapy.Spider):
             )
 
         # 单一来源 总共18页 每天跨度5~7页
-        for page in range(1, 5):
+        for page in range(1, 11):
             items = {}
             items['type_id'] = '38255'
             yield scrapy.Request(
@@ -54,7 +54,7 @@ class ChinaUnicomConprehensiveSpider(scrapy.Spider):
             )
 
         # 招标结果 总共50页 每天跨度20页
-        for page in range(1, 15):
+        for page in range(1, 31):
             items = {}
             items['type_id'] = '38257'
             yield scrapy.Request(

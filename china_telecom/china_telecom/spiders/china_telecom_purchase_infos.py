@@ -52,7 +52,7 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
 
     def start_requests(self):
         # 采购结果公示 总共页数2899 每天数据跨度15页左右
-        for page in range(0, 15):
+        for page in range(0, 26):
             items = {}
             items['category'] = '其他'
             items['type_id'] = '38257'
@@ -67,7 +67,7 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
                                  meta={'items': deepcopy(items)}, dont_filter=True)
 
         # 采购公告 总共页数74 每天数据跨度30页左右
-        for page in range(0, 30):
+        for page in range(0, 51):
             data = {
                 'provinceJT': 'NJT',
                 'docTitle': '',
