@@ -1,0 +1,319 @@
+2018-11-27 17:47:51 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/qtgg/201811/t20181127_11206613.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 17:47:52 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11206549.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 17:47:52 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206525.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 17:47:52 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxtpgg/201811/t20181127_11206550.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 19:50:00 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:00 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:00 [root] WARNING: None
+2018-11-27 19:50:01 [root] WARNING: '邀请招标公告'
+2018-11-27 19:50:02 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:03 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:35 [root] WARNING: None
+2018-11-27 19:50:37 [root] WARNING: None
+2018-11-27 19:50:39 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:41 [root] WARNING: '单一来源公告'
+2018-11-27 19:50:41 [root] WARNING: '单一来源公告'
+2018-11-27 19:51:14 [root] WARNING: None
+2018-11-27 19:51:14 [root] WARNING: None
+2018-11-27 19:51:15 [root] WARNING: None
+2018-11-27 19:51:23 [root] WARNING: '单一来源公告'
+2018-11-27 19:51:32 [root] WARNING: '资格预审公告'
+2018-11-27 19:54:25 [root] WARNING: '单一来源公告'
+2018-11-27 19:54:30 [root] WARNING: '单一来源公告'
+2018-11-27 19:54:31 [root] WARNING: '单一来源公告'
+2018-11-27 19:54:37 [root] WARNING: '邀请招标公告'
+2018-11-27 19:57:43 [root] WARNING: '单一来源公告'
+2018-11-27 19:57:43 [root] WARNING: '单一来源公告'
+2018-11-27 19:57:44 [root] WARNING: '邀请招标公告'
+2018-11-27 19:57:44 [root] WARNING: None
+2018-11-27 19:57:45 [root] WARNING: '单一来源公告'
+2018-11-27 19:57:45 [root] WARNING: '单一来源公告'
+2018-11-27 19:58:11 [root] WARNING: None
+2018-11-27 19:58:12 [root] WARNING: None
+2018-11-27 19:58:14 [root] WARNING: None
+2018-11-27 19:58:19 [root] WARNING: '单一来源公告'
+2018-11-27 19:58:19 [root] WARNING: '单一来源公告'
+2018-11-27 19:58:46 [root] WARNING: None
+2018-11-27 19:58:47 [root] WARNING: None
+2018-11-27 19:58:50 [root] WARNING: None
+2018-11-27 19:58:59 [root] WARNING: '单一来源公告'
+2018-11-27 19:59:01 [root] WARNING: '单一来源公告'
+2018-11-27 19:59:32 [root] WARNING: '资格预审公告'
+2018-11-27 19:59:33 [root] WARNING: '单一来源公告'
+2018-11-27 19:59:38 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11207406.htm. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-11-27 19:59:42 [root] WARNING: '单一来源公告'
+2018-11-27 19:59:44 [root] WARNING: None
+2018-11-27 20:00:07 [root] WARNING: '单一来源公告'
+2018-11-27 20:00:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:00:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:00:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:00:09 [root] WARNING: '单一来源公告'
+2018-11-27 20:00:11 [root] WARNING: None
+2018-11-27 20:00:12 [root] WARNING: None
+2018-11-27 20:00:14 [root] WARNING: None
+2018-11-27 20:00:38 [root] WARNING: None
+2018-11-27 20:00:53 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206185.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:00:54 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206211.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:00:54 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11206195.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:00:54 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206225.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:00:55 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11206179.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:00 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11207406.htm. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-11-27 20:01:08 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206966.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:08 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/zygg/gkzb/201811/t20181127_11206156.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:08 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206220.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206207.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206177.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/xjgg/201811/t20181127_11206943.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206199.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/zbgg/201811/t20181127_11206180.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:11 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/fblbgg/201811/t20181127_11206187.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:11 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxtpgg/201811/t20181127_11206929.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:11 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11207406.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:11 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxtpgg/201811/t20181127_11206266.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:12 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/201811/t20181127_11206318.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:12 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206638.htm>: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-11-27 20:01:13 [root] WARNING: '资格预审公告'
+2018-11-27 20:01:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:01:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:01:37 [root] WARNING: '资格预审公告'
+2018-11-27 20:01:40 [root] WARNING: '单一来源公告'
+2018-11-27 20:01:42 [root] WARNING: '资格预审公告'
+2018-11-27 20:01:48 [root] WARNING: '邀请招标公告'
+2018-11-27 20:02:07 [root] WARNING: '单一来源公告'
+2018-11-27 20:02:07 [root] WARNING: '单一来源公告'
+2018-11-27 20:02:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:02:21 [root] WARNING: None
+2018-11-27 20:02:47 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:09 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:10 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:10 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:11 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:12 [root] WARNING: None
+2018-11-27 20:04:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:36 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206045.htm>
+Traceback (most recent call last):
+  File "C:\Users\liang\AppData\Local\Programs\Python\Python36-32\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "C:\Users\liang\AppData\Local\Programs\Python\Python36-32\lib\site-packages\twisted\python\failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "C:\Users\liang\AppData\Local\Programs\Python\Python36-32\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "C:\Users\liang\AppData\Local\Programs\Python\Python36-32\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\liang\AppData\Local\Programs\Python\Python36-32\lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 351, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://www.ccgp.gov.cn/cggg/dfgg/gkzb/201811/t20181127_11206045.htm took longer than 180.0 seconds..
+2018-11-27 20:04:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:04:37 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:06 [root] WARNING: '邀请招标公告'
+2018-11-27 20:05:06 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:07 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:09 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:09 [root] WARNING: '邀请招标公告'
+2018-11-27 20:05:29 [root] WARNING: None
+2018-11-27 20:05:39 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:39 [root] WARNING: '单一来源公告'
+2018-11-27 20:05:41 [root] WARNING: '其他公告'
+2018-11-27 20:05:57 [root] WARNING: None
+2018-11-27 20:06:14 [root] WARNING: '单一来源公告'
+2018-11-27 20:06:14 [root] WARNING: '单一来源公告'
+2018-11-27 20:06:14 [root] WARNING: '单一来源公告'
+2018-11-27 20:06:15 [root] WARNING: '单一来源公告'
+2018-11-27 20:08:23 [root] WARNING: '单一来源公告'
+2018-11-27 20:08:48 [root] WARNING: '单一来源公告'
+2018-11-27 20:08:49 [root] WARNING: '单一来源公告'
+2018-11-27 20:08:49 [root] WARNING: '单一来源公告'
+2018-11-27 20:09:00 [root] WARNING: None
+2018-11-27 20:09:12 [root] WARNING: '单一来源公告'
+2018-11-27 20:09:32 [root] WARNING: None
+2018-11-27 20:09:51 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:22 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:56 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:57 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:57 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:58 [root] WARNING: '邀请招标公告'
+2018-11-27 20:10:58 [root] WARNING: '单一来源公告'
+2018-11-27 20:10:59 [root] WARNING: '单一来源公告'
+2018-11-27 20:11:09 [root] WARNING: None
+2018-11-27 20:11:11 [root] WARNING: None
+2018-11-27 20:11:34 [root] WARNING: '其他公告'
+2018-11-27 20:11:34 [root] WARNING: '单一来源公告'
+2018-11-27 20:11:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:11:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:12:11 [root] WARNING: '邀请招标公告'
+2018-11-27 20:12:12 [root] WARNING: '邀请招标公告'
+2018-11-27 20:12:13 [root] WARNING: '单一来源公告'
+2018-11-27 20:12:13 [root] WARNING: '单一来源公告'
+2018-11-27 20:12:45 [root] WARNING: '单一来源公告'
+2018-11-27 20:12:45 [root] WARNING: '单一来源公告'
+2018-11-27 20:13:20 [root] WARNING: None
+2018-11-27 20:13:26 [root] WARNING: '资格预审公告'
+2018-11-27 20:13:26 [root] WARNING: '资格预审公告'
+2018-11-27 20:13:27 [root] WARNING: '邀请招标公告'
+2018-11-27 20:13:27 [root] WARNING: '单一来源公告'
+2018-11-27 20:13:27 [root] WARNING: '邀请招标公告'
+2018-11-27 20:14:42 [root] WARNING: None
+2018-11-27 20:15:09 [root] WARNING: None
+2018-11-27 20:15:11 [root] WARNING: None
+2018-11-27 20:15:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:15:22 [root] WARNING: None
+2018-11-27 20:15:27 [root] WARNING: None
+2018-11-27 20:15:28 [root] WARNING: None
+2018-11-27 20:15:36 [root] WARNING: None
+2018-11-27 20:15:43 [root] WARNING: None
+2018-11-27 20:16:07 [root] WARNING: '邀请招标公告'
+2018-11-27 20:16:09 [root] WARNING: None
+2018-11-27 20:16:11 [root] WARNING: None
+2018-11-27 20:16:15 [root] WARNING: None
+2018-11-27 20:16:16 [root] WARNING: None
+2018-11-27 20:16:33 [root] WARNING: None
+2018-11-27 20:16:33 [root] WARNING: None
+2018-11-27 20:16:33 [root] WARNING: None
+2018-11-27 20:16:39 [root] WARNING: None
+2018-11-27 20:16:41 [root] WARNING: None
+2018-11-27 20:16:46 [root] WARNING: None
+2018-11-27 20:16:46 [root] WARNING: None
+2018-11-27 20:16:47 [root] WARNING: None
+2018-11-27 20:16:53 [root] WARNING: None
+2018-11-27 20:17:00 [root] WARNING: None
+2018-11-27 20:17:08 [root] WARNING: None
+2018-11-27 20:17:17 [root] WARNING: None
+2018-11-27 20:17:20 [root] WARNING: None
+2018-11-27 20:17:25 [root] WARNING: '资格预审公告'
+2018-11-27 20:17:27 [root] WARNING: '资格预审公告'
+2018-11-27 20:17:27 [root] WARNING: '单一来源公告'
+2018-11-27 20:17:28 [root] WARNING: '单一来源公告'
+2018-11-27 20:17:28 [root] WARNING: '资格预审公告'
+2018-11-27 20:17:49 [root] WARNING: None
+2018-11-27 20:17:59 [root] WARNING: None
+2018-11-27 20:18:06 [root] WARNING: None
+2018-11-27 20:18:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:08 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:09 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:10 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:10 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:15 [root] WARNING: None
+2018-11-27 20:18:25 [root] WARNING: None
+2018-11-27 20:18:26 [root] WARNING: None
+2018-11-27 20:18:34 [root] WARNING: None
+2018-11-27 20:18:45 [root] WARNING: '单一来源公告'
+2018-11-27 20:18:46 [root] WARNING: '其他公告'
+2018-11-27 20:18:47 [root] WARNING: '单一来源公告'
+2018-11-27 20:19:12 [root] WARNING: None
+2018-11-27 20:19:18 [root] WARNING: None
+2018-11-27 20:19:19 [root] WARNING: None
+2018-11-27 20:19:26 [root] WARNING: '单一来源公告'
+2018-11-27 20:19:27 [root] WARNING: '单一来源公告'
+2018-11-27 20:19:28 [root] WARNING: '资格预审公告'
+2018-11-27 20:20:50 [root] WARNING: None
+2018-11-27 20:20:56 [root] WARNING: '单一来源公告'
+2018-11-27 20:20:56 [root] WARNING: '单一来源公告'
+2018-11-27 20:20:56 [root] WARNING: '邀请招标公告'
+2018-11-27 20:21:05 [root] WARNING: None
+2018-11-27 20:21:27 [root] WARNING: '单一来源公告'
+2018-11-27 20:21:27 [root] WARNING: '邀请招标公告'
+2018-11-27 20:21:27 [root] WARNING: '单一来源公告'
+2018-11-27 20:21:59 [root] WARNING: '单一来源公告'
+2018-11-27 20:22:00 [root] WARNING: '邀请招标公告'
+2018-11-27 20:22:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:22:01 [root] WARNING: '其他公告'
+2018-11-27 20:22:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:22:50 [root] WARNING: None
+2018-11-27 20:23:19 [root] WARNING: '单一来源公告'
+2018-11-27 20:23:19 [root] WARNING: '单一来源公告'
+2018-11-27 20:23:20 [root] WARNING: '单一来源公告'
+2018-11-27 20:23:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:23:22 [root] WARNING: '单一来源公告'
+2018-11-27 20:24:48 [root] WARNING: '单一来源公告'
+2018-11-27 20:24:49 [root] WARNING: '单一来源公告'
+2018-11-27 20:24:50 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:14 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:15 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:15 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:15 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:36 [root] WARNING: '单一来源公告'
+2018-11-27 20:25:42 [root] WARNING: None
+2018-11-27 20:26:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:26:00 [root] WARNING: '邀请招标公告'
+2018-11-27 20:26:01 [root] WARNING: '单一来源公告'
+2018-11-27 20:26:02 [root] WARNING: '资格预审公告'
+2018-11-27 20:26:22 [root] WARNING: None
+2018-11-27 20:26:33 [root] WARNING: '资格预审公告'
+2018-11-27 20:26:33 [root] WARNING: '单一来源公告'
+2018-11-27 20:26:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:02 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:39 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:39 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:40 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:40 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:40 [root] WARNING: '单一来源公告'
+2018-11-27 20:27:41 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:21 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:23 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:24 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:33 [root] WARNING: None
+2018-11-27 20:28:54 [root] WARNING: None
+2018-11-27 20:28:59 [root] WARNING: '资格预审公告'
+2018-11-27 20:28:59 [root] WARNING: '单一来源公告'
+2018-11-27 20:28:59 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:02 [root] WARNING: None
+2018-11-27 20:29:29 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:29 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:30 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:30 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:31 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:31 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:32 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:32 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:46 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:46 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:47 [root] WARNING: '单一来源公告'
+2018-11-27 20:29:48 [root] WARNING: '邀请招标公告'
+2018-11-27 20:29:48 [root] WARNING: '单一来源公告'
+2018-11-27 20:30:35 [root] WARNING: '单一来源公告'
+2018-11-27 20:30:42 [root] WARNING: '单一来源公告'
+2018-11-27 20:30:44 [root] WARNING: '单一来源公告'
+2018-11-27 20:30:45 [root] WARNING: None
+2018-11-27 20:30:47 [root] WARNING: '单一来源公告'
+2018-11-27 20:30:47 [root] WARNING: None
+2018-11-27 20:30:50 [root] WARNING: '资格预审公告'
+2018-11-27 20:30:52 [root] WARNING: '单一来源公告'
+2018-11-27 20:31:25 [root] WARNING: '单一来源公告'
+2018-11-27 20:31:26 [root] WARNING: '资格预审公告'
+2018-11-27 20:31:29 [root] WARNING: '单一来源公告'
+2018-11-27 20:32:26 [root] WARNING: None
+2018-11-27 20:32:33 [root] WARNING: '单一来源公告'
+2018-11-27 20:32:39 [root] WARNING: None
+2018-11-27 20:32:53 [root] WARNING: '单一来源公告'
+2018-11-27 20:32:53 [root] WARNING: '单一来源公告'
+2018-11-27 20:33:00 [root] WARNING: '单一来源公告'
+2018-11-27 20:34:07 [root] WARNING: None
+2018-11-27 20:34:20 [root] WARNING: '单一来源公告'
+2018-11-27 20:34:22 [root] WARNING: '单一来源公告'
+2018-11-27 20:34:30 [root] WARNING: '单一来源公告'
+2018-11-27 20:34:41 [root] WARNING: None
+2018-11-27 20:34:52 [root] WARNING: '单一来源公告'
+2018-11-27 20:35:12 [root] WARNING: '单一来源公告'
+2018-11-27 20:35:13 [root] WARNING: '单一来源公告'
+2018-11-27 23:06:12 [root] WARNING: None
+2018-11-27 23:06:12 [root] WARNING: None
+2018-11-27 23:06:13 [root] WARNING: None
+2018-11-27 23:06:13 [root] WARNING: '邀请招标公告'
+2018-11-27 23:06:14 [root] WARNING: None
+2018-11-27 23:06:23 [root] WARNING: None
+2018-11-27 23:06:23 [root] WARNING: None
+2018-11-27 23:06:55 [root] WARNING: None
+2018-11-27 23:07:18 [root] WARNING: None
+2018-11-27 23:07:32 [root] WARNING: None
+2018-11-27 23:08:29 [root] WARNING: None
