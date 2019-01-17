@@ -12,7 +12,7 @@ import redis
 # sys.path.append('/root/RegularExpression')
 # from RegularExpression.custom_Re import ReguluarE
 
-class ChinaGovComprehensiveSpider(scrapy.spiders):
+class ChinaGovComprehensiveSpider(scrapy.Spider):
     name = 'china_gov_comprehensive'
     allowed_domains = ['ccgp.gov.cn']
     # start_urls = ['http://ccgp.gov.cn/']
@@ -55,7 +55,7 @@ class ChinaGovComprehensiveSpider(scrapy.spiders):
         self.require_today = today.replace('-', ':')
         
         # 获取一年前的时间
-        last_five_days = date.today() + timedelta(days = -5)
+        last_five_days = date.today() + timedelta(days = -7)
         last_five_days = str(last_five_days)
         self.last_five_days = last_five_days.replace('-', ':')
 
