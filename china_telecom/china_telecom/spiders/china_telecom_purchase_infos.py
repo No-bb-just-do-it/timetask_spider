@@ -30,15 +30,15 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
 
         # 文章链接、需要使用format拼接  id在前、encryCode在后
         # 采购结果的文章地址链接
-        self.dealNotice_url = 'caigou.chinatelecom.com.cn/MSS-PORTAL/resultannounc/viewHome.do?id={}&encryCode={}'
+        self.dealNotice_url = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/resultannounc/viewHome.do?id={}&encryCode={}'
         # 预审公告的文章地址拼接
-        self.pre_check_url = 'caigou.chinatelecom.com.cn/MSS-PORTAL/prequalfication/viewForAd.do?id={}&encryCode={}'
+        self.pre_check_url = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/prequalfication/viewForAd.do?id={}&encryCode={}'
         # 澄清公告的文章地址拼接
-        self.clearify_notice_url = 'caigou.chinatelecom.com.cn/MSS-PORTAL/clearifynotice/viewHome.do?id={}&encryCode={}'
+        self.clearify_notice_url = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/clearifynotice/viewHome.do?id={}&encryCode={}'
         # 采购公告的文章地址拼接
-        self.purchase_Notice_url = 'caigou.chinatelecom.com.cn/MSS-PORTAL/{}/viewHome.do?encryCode={}&id={}'
+        self.purchase_Notice_url = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/{}/viewHome.do?encryCode={}&id={}'
         # 单一来源采购公示
-        self.single_source_url = 'caigou.chinatelecom.com.cn/MSS-PORTAL/purchaseannouncebasic/viewHome.do?encryCode={}&id={}'
+        self.single_source_url = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/purchaseannouncebasic/viewHome.do?encryCode={}&id={}'
 
         self.city_dict = {}
         # 将各个城市与编号制成字典
@@ -59,7 +59,7 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
             yield scrapy.Request(url = self.purchase_dealNotice.format(int(page) * 40 + 1), callback = self.parse, meta = {'items' : deepcopy(items)}, dont_filter=True)
 
         # 采购公告澄清 总共页数7 每天数据跨度1页左右
-        for page in range(0, 3):
+        for page in range(0, 2):
             items = {}
             items['category'] = '采购公告澄清'
             items['type_id'] = '38255'
@@ -67,7 +67,7 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
                                  meta={'items': deepcopy(items)}, dont_filter=True)
 
         # 采购公告 总共页数74 每天数据跨度30页左右
-        for page in range(0, 51):
+        for page in range(0, 35):
             data = {
                 'provinceJT': 'NJT',
                 'docTitle': '',
@@ -151,13 +151,18 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
                 if items['category'] == '其他':
                     items['url'] = self.dealNotice_url.format(article_id, encryCode)
 
+                # 由于采购公告每个详情页构造的url方法都不一样、所以分开几个情况
                 elif  items['category'] == '采购公告':
-                    if url_category == 'enquiry':
-                        items['url'] = 'caigou.chinatelecom.com.cn/MSS-PORTAL/{}/viewForAd.do?encryCode={}&id={}'.format(url_category, encryCode, article_id)
-                    elif items['viewCompare'] == '比选公告':
-                        items['url'] = 'caigou.chinatelecom.com.cn/MSS-PORTAL/tenderannouncement/viewCompare.do?encryCode={}&id={}'.format(encryCode, article_id)
-                    elif items['viewCompare'] == '单一来源采购公示':
+                    if items['viewCompare'] == '单一来源采购公示':
                         items['url'] = self.single_source_url.format(encryCode, article_id)
+                    elif items['viewCompare'] == '比选公告':
+                        items['url'] = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/tenderannouncement/viewCompare.do?encryCode={}&id={}'.format(encryCode, article_id)
+                    elif items['viewCompare'] == '询价公告':
+                        items['url'] = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/enquiry/viewForAd.do?encryCode={}&id={}'.format(encryCode, article_id)
+                    elif items['viewCompare'] == '竞争性谈判文件':
+                        items['url'] = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/tenderannouncement/viewNegotiation.do?encryCode={}&id={}'.format(encryCode, article_id)
+                    elif items['viewCompare'] == '招标公告':
+                        items['url'] = 'https://caigou.chinatelecom.com.cn/MSS-PORTAL/tenderannouncement/viewHome.do?encryCode={}&id={}'.format(encryCode, article_id)
                     else:
                         items['url'] = self.purchase_Notice_url.format(url_category, encryCode, article_id)
 
@@ -204,8 +209,8 @@ class ChinaTelecomPurchaseInfosSpider(scrapy.Spider):
                 if 'addr_id' not in items:
                     items['addr_id'] = '100'
 
-                yield scrapy.Request(url='https://' + items['url'], callback=self.parse_article,
-                                     meta={'items': deepcopy(items)})
+                yield scrapy.Request(url = items['url'], callback = self.parse_article,
+                                     meta = {'items': deepcopy(items)})
 
 
         except Exception as e:
