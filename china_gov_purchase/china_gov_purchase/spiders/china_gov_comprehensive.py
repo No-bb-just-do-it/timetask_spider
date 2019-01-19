@@ -6,6 +6,8 @@ import scrapy
 from datetime import datetime, date, timedelta
 import time
 import re
+
+from scrapy.exceptions import CloseSpider
 from scrapy_redis.spiders import RedisSpider
 import redis
 from STMP import send_mail_when_error
