@@ -27,8 +27,8 @@ class ChinaGovComprehensiveSpider(scrapy.Spider):
             'Host': 'www.ccgp.gov.cn',
             'Referer': 'http://www.ccgp.gov.cn/',
             'Connection': 'keep-alive',
-            'Accept-Language': 'en-GB,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
-            'Accept-Encoding': 'gzip, deflate'
+            # 'Accept-Language': 'en-GB,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
+            # 'Accept-Encoding': 'gzip, deflate'
         }
 
         self.city_dict = {}
@@ -75,7 +75,7 @@ class ChinaGovComprehensiveSpider(scrapy.Spider):
     # 使用redis就不用使用该函数创建request
     def start_requests(self):
         # 所有分类的综合  每天大概数据量在450页左右  设置页数161
-        for page in range(1,451):
+        for page in range(1, 451):
             url = self.url.format(page, self.last_five_days, self.require_today)
             # print(url)
             yield scrapy.Request(url, callback = self.parse, dont_filter=True)

@@ -43,7 +43,7 @@ class ChinaMobile(object):
                 # item['addr_id'], 3, item['url'], pymysql.escape_string(item['intro']))
 
                 self.cur.execute(sql)
-                # self.conn.commit()
+                self.conn.commit()
                 self.cur.fetchall()
 
             else:
@@ -57,7 +57,7 @@ class ChinaMobile(object):
                     item['addr_id'], 3, item['url'], pymysql.escape_string(item['intro']))
 
                 self.cur.execute(sql)
-                # self.conn.commit()
+                self.conn.commit()
                 self.cur.fetchall()
 
         except Exception as e:
