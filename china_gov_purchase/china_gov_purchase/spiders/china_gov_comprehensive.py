@@ -67,6 +67,9 @@ class ChinaGovComprehensiveSpider(scrapy.Spider):
         self.url = 'http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time={}&end_time={}&timeType=6&displayZone=&zoneId=&pppStatus=0&agentName='
         self.save_url = 'http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2018%3A10%3A13&end_time=2019%3A01%3A13&timeType=4&displayZone=&zoneId=&pppStatus=0&agentName='
 
+    def quit(self):
+        raise CloseSpider('close spider')
+
     # 使用redis就不用使用该函数创建request
     def start_requests(self):
         # 所有分类的综合  每天大概数据量在450页左右  设置页数161
