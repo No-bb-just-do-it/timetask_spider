@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fe32ec-3037-4816-8025-e19428ac4d2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_gov_purchase/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_gov_purchase/pipelines.py" afterDir="false" />
-    </list>
+    <list default="true" id="c9fe32ec-3037-4816-8025-e19428ac4d2d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,16 +200,15 @@
       <workItem from="1547880195600" duration="43000" />
       <workItem from="1547912695828" duration="1616000" />
       <workItem from="1547955724272" duration="833000" />
-      <workItem from="1548037368606" duration="4985000" />
+      <workItem from="1548037368606" duration="5109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9546000" />
+    <option name="totallyTimeSpent" value="9670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
