@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147d5782-1679-40a2-b4c4-8a3a0bb19740" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/time_task_china_unicom.sh" beforeDir="false" afterPath="$PROJECT_DIR$/time_task_china_unicom.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../china_canton_railway/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../china_canton_railway/city_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../china_canton_railway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../china_canton_railway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/spiders/china_canton_railway_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../china_canton_railway/china_canton_railway/spiders/china_canton_railway_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../china_gov_purchase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../china_gov_purchase/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,22 +18,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/china_unicom/spiders/china_unicom_comprehensive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="1113">
               <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_unicom/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-417" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time_task_china_unicom.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_unicom_execute.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -109,17 +127,17 @@
       <updated>1547626983903</updated>
       <workItem from="1547626986288" duration="500000" />
       <workItem from="1547629752923" duration="8000" />
+      <workItem from="1548231108683" duration="686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="508000" />
+    <option name="totallyTimeSpent" value="1194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -146,17 +164,25 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/china_unicom/spiders/china_unicom_comprehensive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/time_task_china_unicom.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_unicom_execute.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_unicom/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-417" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_unicom/spiders/china_unicom_comprehensive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
         </state>
       </provider>
     </entry>

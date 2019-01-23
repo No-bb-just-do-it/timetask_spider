@@ -70,7 +70,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'china_canton_railway.pipelines.ChinaCantonRailwayPipeline': 300,
+   'china_canton_railway.pipelines.UniversalPipeline': 300,
     # 'scrapy_redis.pipelines.RedisPipeline': 400,
 }
 
@@ -103,14 +103,14 @@ USER_AGENT_LIST = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
 ]
 
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-# 用于配置调度器是否需要持久化
-# 如果为True, 当程序结束了, 依然会保留Redis中的指纹和待爬的请求
-# 如果为False, 当程序结束了, 依然会请空Redis中的指纹和待爬的请求
-SCHEDULER_PERSIST = True
-# Redis数据库配置
-REDIS_URL = "redis://47.106.68.51:6379/14"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# # 用于配置调度器是否需要持久化
+# # 如果为True, 当程序结束了, 依然会保留Redis中的指纹和待爬的请求
+# # 如果为False, 当程序结束了, 依然会请空Redis中的指纹和待爬的请求
+# SCHEDULER_PERSIST = True
+# # Redis数据库配置
+# REDIS_URL = "redis://47.106.68.51:6379/14"
 
 # 链接ip池
 pool = redis.ConnectionPool(host='120.77.159.174', port=6379, db=6)
