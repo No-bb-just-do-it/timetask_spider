@@ -4,11 +4,10 @@ import scrapy
 from copy import deepcopy
 import time
 import re
-from STMP import send_mail_when_error
-from scrapy.exceptions import CloseSpider
-from city_data import get_city_dict
-from Regular_Expression import regularExpression, category
-from quit_spider import quit
+from utils.STMP import send_mail_when_error
+from utils.city_data import get_city_dict
+from utils.Regular_Expression import regularExpression, category
+from utils.quit_spider import quit
 
 class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
     name = 'china_canton_railway_spider'
@@ -30,10 +29,10 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 采购公告 共1601页 每天更新跨度10页
             ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1000001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
-            # 中标结果 共598页 每天更新跨度6页
-            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
-            # 变更公告 共85页 每天更新跨度1页
-            ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
+            # # 中标结果 共598页 每天更新跨度6页
+            # ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
+            # # 变更公告 共85页 每天更新跨度1页
+            # ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
             # # 采购公示 共487页 每天更新跨度3页
             # ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1600001&cur={}&keyword=&inforCode=&time0=&time1=", 487),
             # # 采购公示 共484页 每天更新跨度3页

@@ -1,7 +1,12 @@
 from scrapy.cmdline import execute
 import os
+from spider_name import spiders_name
+from utils.STMP import send_mail_when_error
 
-# 中国铁路广州局集团有限公司物资采购商务平台
-os.system('scrapy crawl china_canton_railway_spider')
-# 中国中铁采购电子商务平台
-os.system('scrapy crawl china_railway_luban_spider')
+for each_spider in spiders_name.items():
+    try:
+        os.system('scrapy crawl {}'.format(each_spider[0]))
+    except:
+        msg = '该爬虫出错 : ', + each_spider[1]
+        send_mail_when_error(msg)
+        continue

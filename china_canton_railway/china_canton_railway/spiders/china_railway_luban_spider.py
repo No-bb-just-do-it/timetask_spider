@@ -3,10 +3,9 @@ import scrapy
 from copy import deepcopy
 import time
 import re
-from STMP import send_mail_when_error
-from scrapy.exceptions import CloseSpider
-from city_data import get_city_dict
-from Regular_Expression import regularExpression, category
+from utils.STMP import send_mail_when_error
+from utils.city_data import get_city_dict
+from utils.Regular_Expression import regularExpression, category
 
 # http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12@中铁鲁班商务
 class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
@@ -34,10 +33,10 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 采购公告 共995页 每天更新跨度4页
             ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&sortid=12&mcode=0001&page={}", 3),
-            # 竞争性谈判 共504页 每天更新跨度3页
-            ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=14&filter=sortid&sortid=14&page={}", 3),
-            # 结果公示 共1000页 每天更新跨度3页
-            ('变更公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=13&sortid=13&filter=sortid&page={}", 3),
+            # # 竞争性谈判 共504页 每天更新跨度3页
+            # ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=14&filter=sortid&sortid=14&page={}", 3),
+            # # 结果公示 共1000页 每天更新跨度3页
+            # ('变更公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=13&sortid=13&filter=sortid&page={}", 3),
         ]
 
     def start_requests(self):
