@@ -1,4 +1,4 @@
-regularExpression = r'\r|\t|\n|<!--.*?-->|<input.*?>|id=[\'\"].*?[\'\"]|style=[\'\"].*?[\'\"]|<STYLE.*?>.*?<\/STYLE>|class=[\'\"].*?[\'\"]|class\s*\'*\"*=\s*[a-zA-Z0-9_]*\'*\"*|<style.*?>.*?<\/style>'
+regularExpression = r'\r|\t|\n|<!--.*?-->|<input.*?>|id=[\'\"].*?[\'\"]|style=[\'\"].*?[\'\"]|<STYLE.*?</STYLE>|class=[\'\"].*?[\'\"]|class\s*\'*\"*=\s*[a-zA-Z0-9_]*\'*\"*|<style.*?>.*?<\/style>|<script.*?</script>|<style.*?</style>|lang=[\'\"].*?[\'\"]|name=[\'\"].*?[\'\"]'
 
 
 category = {

@@ -29,16 +29,16 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 采购公告 共1601页 每天更新跨度10页
             ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1000001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
-            # # 中标结果 共598页 每天更新跨度6页
-            # ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
-            # # 变更公告 共85页 每天更新跨度1页
-            # ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
-            # # 采购公示 共487页 每天更新跨度3页
-            # ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1600001&cur={}&keyword=&inforCode=&time0=&time1=", 487),
-            # # 采购公示 共484页 每天更新跨度3页
-            # ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7000001&cur={}&keyword=&inforCode=&time0=&time1=", 484),
-            # # 结果公示 共39页 每天更新跨度3页
-            # ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7200001&cur={}&keyword=&inforCode=&time0=&time1=", 39)
+            # 中标结果 共598页 每天更新跨度6页
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
+            # 变更公告 共85页 每天更新跨度1页
+            ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
+            # 采购公示 共487页 每天更新跨度3页
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1600001&cur={}&keyword=&inforCode=&time0=&time1=", 487),
+            # 采购公示 共484页 每天更新跨度3页
+            ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7000001&cur={}&keyword=&inforCode=&time0=&time1=", 484),
+            # 结果公示 共39页 每天更新跨度3页
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7200001&cur={}&keyword=&inforCode=&time0=&time1=", 39)
         ]
 
     def start_requests(self):
@@ -82,7 +82,7 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
                 pass
 
             try:
-                items['web_time'] = each_tr.xpath('./td/following-sibling::td[4]/@title').extract_first()
+                items['web_time'] = each_tr.xpath('./td/following-sibling::td[4]/@title').extract_first().strip()
             except:
                 pass
 
@@ -104,9 +104,6 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
                                 items['addr_id'] = self.city_dict[city_name]
                                 break
                     break
-
-            if items['addr_id'] == '':
-                items['addr_id'] = '100'
 
             yield scrapy.Request(url = items['url'], callback = self.parse_article, meta = {'items' : deepcopy(items)})
 

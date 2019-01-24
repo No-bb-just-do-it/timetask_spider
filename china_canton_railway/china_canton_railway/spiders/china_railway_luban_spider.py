@@ -16,8 +16,6 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
         self.headers = {
                 'Host': 'www.crecgec.com',
                 'Connection': 'keep-alive',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-                'Referer': 'http://www.crecgec.com/portal.php'
 }
         # 获取城市字典
         self.city_dict = get_city_dict()
@@ -33,10 +31,10 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 采购公告 共995页 每天更新跨度4页
             ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&sortid=12&mcode=0001&page={}", 3),
-            # # 竞争性谈判 共504页 每天更新跨度3页
-            # ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=14&filter=sortid&sortid=14&page={}", 3),
-            # # 结果公示 共1000页 每天更新跨度3页
-            # ('变更公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=13&sortid=13&filter=sortid&page={}", 3),
+            # 竞争性谈判 共504页 每天更新跨度3页
+            ('招标公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=14&filter=sortid&sortid=14&page={}", 3),
+            # 结果公示 共1000页 每天更新跨度3页
+            ('变更公告', "http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=13&sortid=13&filter=sortid&page={}", 3),
         ]
 
     def start_requests(self):
@@ -78,7 +76,7 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
                 pass
 
             try:
-                items['web_time'] = each_li.xpath('.//em/text()').extract_first().split(' ')[0]
+                items['web_time'] = each_li.xpath('.//em/text()').extract_first().split(' ')[0].strip()
             except:
                 pass
 
@@ -86,9 +84,6 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
                 if city in items['title']:
                     items['addr_id'] = self.city_dict[city]
                     break
-
-            if items['addr_id'] == '':
-                items['addr_id'] = '100'
 
             yield scrapy.Request(url = items['url'], callback = self.article_parse, meta = {'items' : deepcopy(items)})
 
@@ -106,10 +101,6 @@ class ChinaRailwayLubanSpiderSpider(scrapy.Spider):
             print('文章提取出错原因 : ', e)
             pass
 
-        # 系统时间，时间戳
-        items["time"] = '%.0f' % time.time()
-        # 分类id
-        items["sheet_id"] = '29'
         # 文章来源
         items["source_name"] = '中国中铁采购电子商务平台'
 

@@ -28,6 +28,12 @@ class UniversalPipeline(object):
         self.cur = self.conn.cursor()
 
     def process_item(self, item, spider):
+
+        # 系统时间，时间戳
+        item["time"] = '%.0f' % time.time()
+        if item['addr_id'] == '':
+            item['addr_id'] = '100'
+
         # if item['web_time'] == self.today or item['web_time'] == self.yesterday:
         try:
             if item['addr_id'] != '' and item['title'] != '' and item['url'] != '' and item['intro'] != '' and item['web_time'] != '' :
