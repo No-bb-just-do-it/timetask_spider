@@ -38,7 +38,6 @@ class meishanSpiderSpider(scrapy.Spider):
             ('招标结果', 'http://www.msggzy.org.cn/front/jsgc/001013/?Paging={}', 3),
             # 工程建设招标结果  共16页 每天更新跨度1页
             ('招标结果', 'http://www.msggzy.org.cn/front/jsgc/001015/?Paging={}', 3),
-
         ]
 
         self.headers = {
@@ -58,7 +57,7 @@ class meishanSpiderSpider(scrapy.Spider):
         # 由于最后一个tr标签为页数栏、所以排除掉
         all_trs = response.xpath('//div[@class="ewb-comp-bd"]//table//tr')[:-1]
 
-        for each_tr in all_trs[:5]:
+        for each_tr in all_trs:
             items['title'] = ''
             items['url'] = ''
             items['web_time'] = ''
@@ -73,6 +72,13 @@ class meishanSpiderSpider(scrapy.Spider):
             try:
                 items['url'] = self.govPurchase_baseUrl + each_tr.xpath('./td[1]/a/@href').extract_first()
             except:
+                msg = self.name + ', 该爬虫详情页获取url失败'
+                send_mail_when_error(msg)
+                self.error_count += 1
+                if self.error_count > 3:
+                    quit()
+                    msg = self.name + ', 该爬虫因详情页获取失败被暂停'
+                    send_mail_when_error(msg)
                 pass
 
             try:
