@@ -41,8 +41,6 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 10
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-	'Host': '61.235.77.80',
-	'Referer': 'http://61.235.77.80/mainPageNoticeList.do?method=list&cur=1',
 	'Connection': 'keep-alive',
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36'
 }

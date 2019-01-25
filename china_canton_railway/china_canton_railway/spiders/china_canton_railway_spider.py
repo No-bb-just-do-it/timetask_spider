@@ -26,6 +26,11 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
         self.pattern01 = r'成交人：(.*?)<'
         self.pattern_list = [self.pattern01]
 
+        self.headers = {
+            'Host': '61.235.77.80',
+            'Referer': 'http://61.235.77.80/mainPageNoticeList.do?method=list&cur=1',
+        }
+
         self.start_urls = [
             # 采购公告 共1601页 每天更新跨度10页
             ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1000001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
@@ -48,7 +53,7 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
             for url in urls:
                 items = {}
                 items["type_id"] = self.category[url_info[0]]
-                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)})
+                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)}, headers = self.headers)
 
     def parse(self, response):
         items = response.meta['items']
@@ -105,7 +110,7 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
                                 break
                     break
 
-            yield scrapy.Request(url = items['url'], callback = self.parse_article, meta = {'items' : deepcopy(items)})
+            yield scrapy.Request(url = items['url'], callback = self.parse_article, meta = {'items' : deepcopy(items)}, headers = self.headers)
 
 
     def parse_article(self, response):
