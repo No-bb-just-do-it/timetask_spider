@@ -1,7 +1,8 @@
-regularExpression = r'\r|\t|\n|<!--.*?-->|<input.*?>|id=[\'\"].*?[\'\"]|style=[\'\"].*?[\'\"]|<STYLE.*?</STYLE>|class=[\'\"].*?[\'\"]|class\s*\'*\"*=\s*[a-zA-Z0-9_]*\'*\"*|<style.*?>.*?<\/style>|<script.*?</script>|<style.*?</style>|lang=[\'\"].*?[\'\"]|name=[\'\"].*?[\'\"]|<meta.*?>'
+
+regularExpression = r'\r|\t|\n|<o:p>|</o:p>|<!--.*?-->|<input.*?>|id=[\'\"].*?[\'\"]|style=[\'\"].*?[\'\"]|<STYLE.*?</STYLE>|class=[\'\"].*?[\'\"]|class\s*\'*\"*=\s*[a-zA-Z0-9_]*\'*\"*|<style.*?>.*?<\/style>|<script.*?</script>|<style.*?</style>|lang=[\'\"].*?[\'\"]|name=[\'\"].*?[\'\"]'
 
 # 眉山市
-regularExpression02 = r'style=[\'\"].*?>'
+regularExpression02 = r'\sstyle=.*?>'
 
 
 category = {
