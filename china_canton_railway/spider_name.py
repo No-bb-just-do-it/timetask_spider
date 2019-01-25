@@ -7,4 +7,5 @@ spiders_name = {
         # 'meishan_city_gov_spider' : '眉山市公共资源交易中心',
         # 'daqing_city_gov_spider' : '大庆市公共资源交易网',
         # 'zhuzhou_city_gov_spider' : '株洲市公共资源交易网'
+        # 'longyan_city_gov_spider' : '眉山市公共资源交易网'
 }
