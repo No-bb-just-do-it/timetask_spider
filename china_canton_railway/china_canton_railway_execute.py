@@ -12,4 +12,4 @@ for each_spider in spiders_name.items():
         send_mail_when_error(msg)
         continue
     finally:
-        time.sleep(0.1)
+        time.sleep(0.2)

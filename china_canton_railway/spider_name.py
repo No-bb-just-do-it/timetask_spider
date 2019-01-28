@@ -6,6 +6,7 @@ spiders_name = {
         # 'yueyang_city_gov_spider' : '岳阳市人民政府'
         # 'meishan_city_gov_spider' : '眉山市公共资源交易中心',
         # 'daqing_city_gov_spider' : '大庆市公共资源交易网',
-        # 'zhuzhou_city_gov_spider' : '株洲市公共资源交易网'
-        # 'longyan_city_gov_spider' : '眉山市公共资源交易网'
+        # 'zhuzhou_city_gov_spider' : '株洲市公共资源交易网',
+        # 'longyan_city_gov_spider' : '眉山市公共资源交易网',
+        'dalian_city_gov_spider' : '大连市公共资源'
 }

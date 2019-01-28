@@ -58,7 +58,7 @@ class longyanSpiderSpider(scrapy.Spider):
         # 获取所有招标信息的li标签
         all_lis = response.xpath('//div[@class="r-bd"]/ul[1]/li')
 
-        for each_li in all_lis[:3]:
+        for each_li in all_lis:
             items['title'] = ''
             items['url'] = ''
             items['web_time'] = ''
