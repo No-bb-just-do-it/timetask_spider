@@ -13,5 +13,6 @@ spiders_name = {
         # 'xinxiang_city_gov_spider' : '新乡市政府采购网',
         # 'liupanshui_city_gov_spider' : '六盘水市公共资源交易网'          # js加密
         # 'jinzhou_city_gov_spider' : '锦州市公共资源交易管理办公室',
-        'jingzhou_city_gov_spider' : '荆州市公共资源交易信息网'
+        # 'jingzhou_city_gov_spider' : '荆州市公共资源交易信息网',
+        'anshun_city_gov_spider' : '安顺市全国公共资源交易平台'
 }
