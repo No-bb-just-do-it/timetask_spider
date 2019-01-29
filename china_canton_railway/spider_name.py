@@ -10,5 +10,7 @@ spiders_name = {
         # 'longyan_city_gov_spider' : '眉山市公共资源交易网',
         # 'dalian_city_gov_spider' : '大连市公共资源',
         # 'foshan_nanhai_gov_spider' : '佛山市南海区人民政府网',
-        'xinxiang_city_gov_spider' : '新乡市政府采购网'
+        # 'xinxiang_city_gov_spider' : '新乡市政府采购网',
+        # 'liupanshui_city_gov_spider' : '六盘水市公共资源交易网'          # js加密
+        'jinzhou_city_gov_spider' : '锦州市公共资源交易管理办公室'
 }
