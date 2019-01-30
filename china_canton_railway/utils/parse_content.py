@@ -9,5 +9,4 @@ class Parse_content:
         clean_article = re.sub(regularExpression, ' ', dirty_article)
         return clean_article
 
-
 pc = Parse_content()
