@@ -30,7 +30,7 @@ ROBOTSTXT_OBEY = False
 # See also autothrottle settings and docs
 DOWNLOAD_DELAY = 0.3
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 10
+CONCURRENT_REQUESTS_PER_DOMAIN = 1
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
@@ -56,7 +56,7 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'china_canton_railway.middlewares.RandomUserAgent': 543,
-   'china_canton_railway.middlewares.RandomIpMiddleWare': 555,
+   # 'china_canton_railway.middlewares.RandomIpMiddleWare': 555,
 }
 
 # Enable or disable extensions
@@ -108,7 +108,7 @@ USER_AGENT_LIST = [
 # # 如果为False, 当程序结束了, 依然会请空Redis中的指纹和待爬的请求
 # SCHEDULER_PERSIST = True
 # # Redis数据库配置
-# REDIS_URL = "redis://47.106.68.51:6379/14"
+# REDIS_URL = "redis://120.79.14.9:6379/14"
 
 # 链接ip池
 pool = redis.ConnectionPool(host='120.77.159.174', port=6379, db=6)

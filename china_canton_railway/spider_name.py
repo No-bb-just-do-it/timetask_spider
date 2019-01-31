@@ -17,5 +17,6 @@ spiders_name = {
         # 'anshun_city_gov_spider' : '安顺市全国公共资源交易平台',
         # 'hefei_city_gov_spider' : '合肥市政府信息公开网',               # 写着写着502错误
         # 'dalizhou_city_gov_spider' : '大理州公共资源交易电子服务系统',
-        # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网'
+        # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',
+        # 'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室'
 }

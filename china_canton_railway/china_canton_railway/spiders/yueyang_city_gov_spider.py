@@ -24,13 +24,15 @@ class yueyangSpiderSpider(scrapy.Spider):
         self.error_count = 0
 
         self.start_urls = [
-            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/zbtb/default.jsp?pager.offset={}&pager.desc=false', 3),
-            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
+            # 政府采购739 每天两页 工程建设207 每天一页 医疗采购49 每天一页
+            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/zbtb/default.jsp?pager.offset={}&pager.desc=false', 3),
+            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
             ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24217/default.jsp?pager.offset={}&pager.desc=false', 3),
         ]
 
         self.headers = {
             'Connection': 'keep-alive',
+            'Host': 'www.yueyang.gov.cn'
         }
 
     def start_requests(self):
@@ -40,7 +42,7 @@ class yueyangSpiderSpider(scrapy.Spider):
             for url in urls:
                 items = {}
                 items['type_id'] = self.category[url_info[0]]
-                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)}, headers = self.headers)
+                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)}, headers = self.headers, dont_filter=True)
 
     def parse(self, response):
 

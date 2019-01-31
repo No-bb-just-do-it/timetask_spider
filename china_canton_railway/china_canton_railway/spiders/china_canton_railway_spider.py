@@ -33,17 +33,17 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
 
         self.start_urls = [
             # 采购公告 共1601页 每天更新跨度10页
-            ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1000001&cur={}&keyword=&inforCode=&time0=&time1=", 1601),
+            ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1000001&cur={}&keyword=&inforCode=&time0=&time1=", 16),
             # 中标结果 共598页 每天更新跨度6页
-            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 598),
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1200001&cur={}&keyword=&inforCode=&time0=&time1=", 11),
             # 变更公告 共85页 每天更新跨度1页
-            ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 85),
+            ('变更公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1300001&cur={}&keyword=&inforCode=&time0=&time1=", 3),
             # 采购公示 共487页 每天更新跨度3页
-            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1600001&cur={}&keyword=&inforCode=&time0=&time1=", 487),
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=1600001&cur={}&keyword=&inforCode=&time0=&time1=", 5),
             # 采购公示 共484页 每天更新跨度3页
-            ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7000001&cur={}&keyword=&inforCode=&time0=&time1=", 484),
+            ('招标公告', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7000001&cur={}&keyword=&inforCode=&time0=&time1=", 5),
             # 结果公示 共39页 每天更新跨度3页
-            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7200001&cur={}&keyword=&inforCode=&time0=&time1=", 39)
+            ('招标结果', "http://wz.guangzh.95306.cn/mainPageNoticeList.do?method=init&id=7200001&cur={}&keyword=&inforCode=&time0=&time1=", 5)
         ]
 
     def start_requests(self):
@@ -53,7 +53,7 @@ class ChinaCantonRailwaySpiderSpider(scrapy.Spider):
             for url in urls:
                 items = {}
                 items["type_id"] = self.category[url_info[0]]
-                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)}, headers = self.headers)
+                yield scrapy.Request(url, callback=self.parse, meta={"items": deepcopy(items)}, headers = self.headers, dont_filter = True)
 
     def parse(self, response):
         items = response.meta['items']
