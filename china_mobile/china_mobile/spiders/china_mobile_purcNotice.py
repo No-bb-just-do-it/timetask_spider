@@ -34,15 +34,13 @@ class ChinaMobilePurcnoticeSpider(scrapy.Spider):
         # 原文章url
         self.article_url = 'https://b2b.10086.cn/b2b/main/viewNoticeContent.html?noticeBean.id={}'
 
-        self.pattern01 = r'服务地点(.*?)</span>'
-        self.pattern02 = r'公司地\s*址：(.*?)</span>'
-        self.pattern03 = r'地.*?址：(.*?)</span>'
-        self.pattern04 = r'详细地址：(.*?)</span>'
-        self.pattern05 = r'招标方：(.*?)</span>'
-        self.pattern06 = r'采购人：(.*?)</span>'
-        self.pattern08 = r'联系地址：</span><span style="font-family:宋体;color:black;">(.*?)</span>'
+        self.pattern02 = r'公司地\s*址：(.*?)<'
+        self.pattern03 = r'地.*?址：(.*?)<'
+        self.pattern05 = r'招标方.*?：(.*?)<'
+        self.pattern06 = r'采.*?购.*?人.*?：(.*?)<'
+        self.pattern08 = r'详细地址：(.*?)<'
         # 正则表达式的规则列表
-        self.pattern_list = [self.pattern08, self.pattern01, self.pattern02, self.pattern03, self.pattern04, self.pattern05, self.pattern06]
+        self.pattern_list = [self.parttern06, self.pattern05, self.pattern08, self.pattern02, self.pattern03]
 
         with open('/root/RegularExpression.txt', 'r')as f:
             self.regularExpression = f.read()

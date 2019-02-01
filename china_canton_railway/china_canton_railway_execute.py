@@ -1,4 +1,4 @@
-from scrapy.cmdline import execute
+# from scrapy.cmdline import execute
 import os
 import time
 from spider_name import spiders_name
@@ -13,3 +13,8 @@ for each_spider in spiders_name.items():
         continue
     finally:
         time.sleep(0.2)
+
+
+# for each_spider in spiders_name.items():
+#     os.system('scrapy crawl {}'.format(each_spider[0]))
+#     time.sleep(0.2)

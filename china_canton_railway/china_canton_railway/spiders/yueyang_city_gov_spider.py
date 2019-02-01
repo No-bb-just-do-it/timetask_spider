@@ -26,8 +26,8 @@ class yueyangSpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 政府采购739 每天两页 工程建设207 每天一页 医疗采购49 每天一页
             ('招标结果', 'http://www.yueyang.gov.cn/cxjs/zbtb/default.jsp?pager.offset={}&pager.desc=false', 3),
-            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
-            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24217/default.jsp?pager.offset={}&pager.desc=false', 3),
+            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
+            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24217/default.jsp?pager.offset={}&pager.desc=false', 3),
         ]
 
         self.headers = {
@@ -50,7 +50,7 @@ class yueyangSpiderSpider(scrapy.Spider):
         # 获取所有招标信息的li标签
         all_lis = response.xpath('//div[@style="display: block;"]//li')
 
-        for each_li in all_lis:
+        for each_li in all_lis[:3]:
             items['title'] = ''
             items['url'] = ''
             items['web_time'] = ''
