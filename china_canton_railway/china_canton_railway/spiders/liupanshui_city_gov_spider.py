@@ -6,6 +6,7 @@ from utils.Regular_Expression import regularExpression, regularExpression02, cat
 import re
 from utils.STMP import send_mail_when_error
 from utils.parse_content import pc
+from utils.encode_url import aes
 
 # http://ggzy.gzlps.gov.cn/jyxxzc/index_1.jhtml @ 六盘水市公共资源交易网
 class liupanshuiSpiderSpider(scrapy.Spider):
@@ -22,7 +23,7 @@ class liupanshuiSpiderSpider(scrapy.Spider):
             'title_rule': './p[1]/a/text()',
             'url_rule': './p[1]/a/@href',
             'web_time_rule': './p[2]/text()',
-            'content_rule' : r'</P>(.*?)<!--EndFragment-->'
+            'content_rule' : r'<!-- 交易信息-->(.*?)<div class="footer">'
         }
 
         self.error_count = 0
@@ -71,7 +72,15 @@ class liupanshuiSpiderSpider(scrapy.Spider):
                 pass
 
             try:
-                items['url'] = self.baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()
+                get_url = self.baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()
+                get_prefix = re.search(r'(http://ggzy.gzlps.gov.cn:80/jyxxz.*?/)', get_url, re.S).group(1)
+                dirty_url = aes.url_encrypt(get_url)
+                # print(dirty_url)
+                suffix_url = re.search(r'http://ggzy.gzlps.gov.cn:80/jyxxz.*?/(.*)', dirty_url, re.S).group(1)
+                if '/' in suffix_url:
+                    items['url'] = get_prefix + suffix_url.replace('/', '%5E')
+                else:
+                    items['url'] = dirty_url
             except:
                 msg = self.name + ', 该爬虫详情页获取url失败'
                 send_mail_when_error(msg)
@@ -87,5 +96,23 @@ class liupanshuiSpiderSpider(scrapy.Spider):
             except:
                 pass
 
-            print(items)
-            # yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
+            yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
+
+
+    def parse_article(self, response):
+        items = response.meta['items']
+        try:
+            items['intro'] = self.pc.get_clean_content(self.xpath_rule['content_rule'], self.regularExpression, self.regularExpression02, response.text)
+        except:
+            pass
+
+        items['addr_id'] = self.addr_id
+
+        if items['addr_id'] == '':
+            for city in self.city_dict:
+                if city in items['title']:
+                    items['addr_id'] = self.city_dict[city]
+                    break
+
+        items["source_name"] = self.source_name
+        yield items

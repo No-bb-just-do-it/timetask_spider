@@ -104,31 +104,31 @@ class liuzhouSpiderSpider(scrapy.Spider):
                 '__VIEWSTATEENCRYPTED' : ''
             }
             yield scrapy.FormRequest(url = self.gov_bidNotice_url, callback = self.parse, dont_filter = True, formdata = form_data, headers = self.headers)
-    #
-    #
-    # def parse_article(self, response):
-    #     items = response.meta['items']
-    #
-    #     try:
-    #         items['intro'] = self.pc.get_clean_content(self.xpath_rule['content_rule'], self.regularExpression, self.regularExpression02, response.text)
-    #     except:
-    #         pass
-    #
-    #
-    #     items['addr_id'] = self.addr_id
-    #
-    #     if items['addr_id'] == '':
-    #         for city in self.city_dict:
-    #             if city in items['title']:
-    #                 items['addr_id'] = self.city_dict[city]
-    #                 break
-    #
-    #     if '中标' in items['title'] or '废标' in items['title']:
-    #         items['type_id'] = '38257'
-    #     elif '变更' in items['title'] or '更正' in items['title']:
-    #         items['type_id'] = '38256'
-    #     else:
-    #         items['type_id'] = '38255'
-    #
-    #     items["source_name"] = self.source_name
-    #     yield items
+
+
+    def parse_article(self, response):
+        items = response.meta['items']
+
+        try:
+            items['intro'] = self.pc.get_clean_content(self.xpath_rule['content_rule'], self.regularExpression, self.regularExpression02, response.text)
+        except:
+            pass
+
+
+        items['addr_id'] = self.addr_id
+
+        if items['addr_id'] == '':
+            for city in self.city_dict:
+                if city in items['title']:
+                    items['addr_id'] = self.city_dict[city]
+                    break
+
+        if '中标' in items['title'] or '废标' in items['title']:
+            items['type_id'] = '38257'
+        elif '变更' in items['title'] or '更正' in items['title']:
+            items['type_id'] = '38256'
+        else:
+            items['type_id'] = '38255'
+
+        items["source_name"] = self.source_name
+        yield items
