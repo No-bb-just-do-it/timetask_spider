@@ -23,7 +23,7 @@ class liupanshuiSpiderSpider(scrapy.Spider):
             'title_rule': './p[1]/a/text()',
             'url_rule': './p[1]/a/@href',
             'web_time_rule': './p[2]/text()',
-            'content_rule' : r'<!-- 交易信息-->(.*?)<div class="footer">'
+            'content_rule' : r'<div class="article">(.*?)<div class="footer">'
         }
 
         self.error_count = 0
@@ -42,7 +42,10 @@ class liupanshuiSpiderSpider(scrapy.Spider):
         self.pc = pc
 
         self.start_urls = [
-            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxzc/index_{}.jhtml', 3)
+            # 政府采购 共252页 每天更新跨度 1页
+            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxzc/index_{}.jhtml', 252),
+            # 建设工程 共625页 每天更新跨度1页
+            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxgc/index_{}.jhtml', 625),
         ]
 
 
@@ -73,10 +76,9 @@ class liupanshuiSpiderSpider(scrapy.Spider):
 
             try:
                 get_url = self.baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()
-                get_prefix = re.search(r'(http://ggzy.gzlps.gov.cn:80/jyxxz.*?/)', get_url, re.S).group(1)
+                get_prefix = re.search(r'(http://ggzy.gzlps.gov.cn:80/jyxx.*?/)', get_url, re.S).group(1)
                 dirty_url = aes.url_encrypt(get_url)
-                # print(dirty_url)
-                suffix_url = re.search(r'http://ggzy.gzlps.gov.cn:80/jyxxz.*?/(.*)', dirty_url, re.S).group(1)
+                suffix_url = re.search(r'http://ggzy.gzlps.gov.cn:80/jyxx.*?/(.*)', dirty_url, re.S).group(1)
                 if '/' in suffix_url:
                     items['url'] = get_prefix + suffix_url.replace('/', '%5E')
                 else:
@@ -113,6 +115,11 @@ class liupanshuiSpiderSpider(scrapy.Spider):
                 if city in items['title']:
                     items['addr_id'] = self.city_dict[city]
                     break
+
+        if '废标' in items['title'] or '中标' in items['title'] or '成交' in items['title']:
+            items['type_id'] = '38257'
+        elif '更正' in items['title'] or '变更' in items['title']:
+            items['type_id'] = '38256'
 
         items["source_name"] = self.source_name
         yield items

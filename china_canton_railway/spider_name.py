@@ -18,5 +18,5 @@ spiders_name = {
         # 'hefei_city_gov_spider' : '合肥市政府信息公开网',               # 写着写着502错误
         # 'dalizhou_city_gov_spider' : '大理州公共资源交易电子服务系统',
         # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',
-        'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
+        # 'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
 }
