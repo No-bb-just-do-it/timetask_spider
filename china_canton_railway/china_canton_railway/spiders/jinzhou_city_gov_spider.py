@@ -42,15 +42,15 @@ class jinzhouSpiderSpider(scrapy.Spider):
 
         self.start_urls = [
             # 政府采购 公告共397页 结果共258 变更共14页（更新频率均1页）
-            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077001/077001001/{}.html', 3),
-            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077001/077001002/{}.html', 3),
-            ('变更公告', 'http://www.jztb.gov.cn/jyxx/077001/077001003/{}.html', 3),
+            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077001/077001001/{}.html', 397),
+            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077001/077001002/{}.html', 258),
+            ('变更公告', 'http://www.jztb.gov.cn/jyxx/077001/077001003/{}.html', 14),
             # 工程建设 招标公告112 中标候选人72 中标公示61（更新频率均1页）
-            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077002/077002001/{}.html', 3),
-            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077002/077002002/{}.html', 3),
-            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077002/077002003/{}.html', 3),
-            # 药品器械采购 公告13页
-            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077005/077005001/{}.html', 3),
+            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077002/077002001/{}.html', 112),
+            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077002/077002002/{}.html', 72),
+            ('招标结果', 'http://www.jztb.gov.cn/jyxx/077002/077002003/{}.html', 61),
+            # 药品器械采购公告 采购结果 均13页
+            ('招标公告', 'http://www.jztb.gov.cn/jyxx/077005/077005001/{}.html', 13),
             ('招标结果', 'http://www.jztb.gov.cn/jyxx/077005/077005002/{}.html', 3),
 
         ]
