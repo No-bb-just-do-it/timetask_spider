@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a52b7828-6079-4a8c-a26a-f1b7a837b58f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/commands/crawlall.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/commands/crawlall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/liuzhou_city_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/liuzhou_city_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unversal_time_task.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Unversal_time_task.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Unversal_time_task.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -101,11 +105,6 @@
               <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/china_canton_railway/commands/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -184,6 +183,7 @@
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/liuzhou_city_spider.py" />
         <option value="$PROJECT_DIR$/spider_name.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/settings.py" />
+        <option value="$PROJECT_DIR$/Unversal_time_task.sh" />
       </list>
     </option>
   </component>
@@ -375,12 +375,12 @@
       <workItem from="1548927306623" duration="4776000" />
       <workItem from="1548985024329" duration="8614000" />
       <workItem from="1549015584192" duration="330000" />
-      <workItem from="1549938276717" duration="10691000" />
+      <workItem from="1549938276717" duration="11945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162242000" />
+    <option name="totallyTimeSpent" value="163496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -393,7 +393,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49722221" visible="true" weight="0.19313304" />
       <window_info id="Structure" order="1" sideWeight="0.50277776" side_tool="true" weight="0.19313304" />
@@ -465,7 +464,6 @@
     <entry file="file://$PROJECT_DIR$/china_canton_railway/middlewares.py" />
     <entry file="file://$PROJECT_DIR$/utils/STMP.py" />
     <entry file="file://$PROJECT_DIR$/城市编号id.txt" />
-    <entry file="file://$PROJECT_DIR$/Unversal_time_task.sh" />
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/shaoxing_city_spider.py" />
     <entry file="file://$PROJECT_DIR$/utils/Regular_Expression.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -591,7 +589,14 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Unversal_time_task.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
