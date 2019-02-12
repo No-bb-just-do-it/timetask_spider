@@ -11,12 +11,12 @@ spiders_name = {
         # 'dalian_city_gov_spider' : '大连市公共资源',
         # 'foshan_nanhai_gov_spider' : '佛山市南海区人民政府网',           # 已爬
         # 'xinxiang_city_gov_spider' : '新乡市政府采购网',
-        'liupanshui_city_gov_spider' : '六盘水市公共资源交易网'          # js加密｀
+        'liupanshui_city_gov_spider' : '六盘水市公共资源交易网',           # js加密｀
         # 'jinzhou_city_gov_spider' : '锦州市公共资源交易管理办公室',
         # 'jingzhou_city_gov_spider' : '荆州市公共资源交易信息网',
         # 'anshun_city_gov_spider' : '安顺市全国公共资源交易平台',
         # 'hefei_city_gov_spider' : '合肥市政府信息公开网',               # 写着写着502错误
         # 'dalizhou_city_gov_spider' : '大理州公共资源交易电子服务系统',
         # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',
-        # 'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
+        'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
 }

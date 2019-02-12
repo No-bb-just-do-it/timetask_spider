@@ -1,18 +1,20 @@
 from scrapy.commands import ScrapyCommand
-from scrapy.utils.project import get_project_settings
+from china_canton_railway.settings import GOING_TO_CRAWL
 
 
 class Command(ScrapyCommand):
     requires_project = True
 
     def syntax(self):
-        return '[options]'
+        return '[option]'
 
     def short_desc(self):
         return 'Runs all of the spiders'
 
-    def run(self, args, opts):
+    def run(self, arg, args):
         spider_list = self.crawler_process.spiders.list()
         for name in spider_list:
-            self.crawler_process.crawl(name, **opts.__dict__)
+            if name not in GOING_TO_CRAWL:
+                continue
+            self.crawler_process.crawl(name)
         self.crawler_process.start()

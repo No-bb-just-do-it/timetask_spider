@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import redis
+from spider_name import spiders_name
 
 
 BOT_NAME = 'china_canton_railway'
@@ -10,6 +11,8 @@ NEWSPIDER_MODULE = 'china_canton_railway.spiders'
 # command设置
 COMMANDS_MODULE = 'china_canton_railway.commands'
 
+# 输入爬取的网站
+GOING_TO_CRAWL = [each_spider[0] for each_spider in spiders_name.items()]
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

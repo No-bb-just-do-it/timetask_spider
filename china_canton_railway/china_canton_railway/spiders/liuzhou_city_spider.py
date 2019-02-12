@@ -87,9 +87,9 @@ class liuzhouSpiderSpider(scrapy.Spider):
                 items['web_time'] = each_li.xpath(self.xpath_rule['web_time_rule']).extract_first().strip()
             except:
                 pass
-            print(items['title'])
+            # print(items['title'])
 
-            # yield scrapy.Request(url = items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
+            yield scrapy.Request(url = items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
 
         # 总共1443页
         if self.count < 3:
