@@ -116,7 +116,7 @@ class liupanshuiSpiderSpider(scrapy.Spider):
                     items['addr_id'] = self.city_dict[city]
                     break
 
-        if '废标' in items['title'] or '中标' in items['title'] or '成交' in items['title']:
+        if '废标' in items['title'] or '中标' in items['title'] or '成交' in items['title'] or '失败' in items['title']:
             items['type_id'] = '38257'
         elif '更正' in items['title'] or '变更' in items['title']:
             items['type_id'] = '38256'

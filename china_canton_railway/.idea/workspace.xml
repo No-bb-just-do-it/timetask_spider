@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a52b7828-6079-4a8c-a26a-f1b7a837b58f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/liupanshui_city_gov_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/liupanshui_city_gov_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider_name.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/liupanshui_city_gov_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+            <state relative-caret-position="494">
+              <caret line="121" column="38" lean-forward="true" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -378,12 +376,12 @@
       <workItem from="1548985024329" duration="8614000" />
       <workItem from="1549015584192" duration="330000" />
       <workItem from="1549938276717" duration="12044000" />
-      <workItem from="1549957662999" duration="2109000" />
+      <workItem from="1549957662999" duration="2170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165704000" />
+    <option name="totallyTimeSpent" value="165765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/liupanshui_city_gov_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+        <state relative-caret-position="494">
+          <caret line="121" column="38" lean-forward="true" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
