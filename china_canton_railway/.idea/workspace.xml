@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a52b7828-6079-4a8c-a26a-f1b7a837b58f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/anshun_city_gov_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/anshun_city_gov_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/jingzhou_city_gov_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/jingzhou_city_gov_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spider_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider_name.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/china_canton_railway$run.coverage" NAME="run Coverage Results" MODIFIED="1550046898282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/china_canton_railway$run.coverage" NAME="run Coverage Results" MODIFIED="1550048036289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/china_canton_railway$china_canton_railway_execute.coverage" NAME="china_canton_railway_execute Coverage Results" MODIFIED="1549945562632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/china_canton_railway$liuzhou_city_spider.coverage" NAME="liuzhou_city_spider Coverage Results" MODIFIED="1548929909609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/china_canton_railway/spiders" />
   </component>
@@ -26,17 +22,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider_name.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="63">
+              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py">
+        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/AirChina_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1556">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="-1504" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-482">
+              <caret line="55" column="80" lean-forward="true" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -45,12 +48,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/anshun_city_gov_spider.py">
+        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/meishan_city_gov_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="-1679" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
-                <element signature="e#24#65#0" expanded="true" />
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,30 +76,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/xinxiang_city_gov_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse_function/parse_content_class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104" />
           </provider>
         </entry>
       </file>
@@ -105,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1991">
-              <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+            <state relative-caret-position="235">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -139,6 +133,7 @@
     <findStrings>
       <find>国航全球地面航班保障平台寻源公告</find>
       <find>or</find>
+      <find>addr_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,7 +156,6 @@
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/china_internetional_plane_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/china_international_plane_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/AirChina_spider.py" />
-        <option value="$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/china_railway_luban_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/meishan_city_gov_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/chongqing_xiushan_gov_spider.py" />
@@ -195,8 +189,9 @@
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/anshun_city_gov_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/jingzhou_city_gov_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py" />
-        <option value="$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py" />
         <option value="$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py" />
+        <option value="$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py" />
+        <option value="$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py" />
         <option value="$PROJECT_DIR$/spider_name.py" />
       </list>
     </option>
@@ -396,12 +391,12 @@
       <workItem from="1549967451363" duration="785000" />
       <workItem from="1549976285466" duration="829000" />
       <workItem from="1550023156156" duration="3091000" />
-      <workItem from="1550027289466" duration="9038000" />
+      <workItem from="1550027289466" duration="10334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180788000" />
+    <option name="totallyTimeSpent" value="182084000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,14 +409,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.21316166" />
       <window_info id="Structure" order="1" sideWeight="0.50416666" side_tool="true" weight="0.21030043" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39027777" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39027777" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -444,7 +438,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/parsel/selector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -468,11 +461,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/AirChina_spider.py" />
     <entry file="file://$PROJECT_DIR$/setup.py" />
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/china_canton_railway_spider.py" />
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/yueyang_city_gov_spider.py" />
-    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/meishan_city_gov_spider.py" />
     <entry file="file://$PROJECT_DIR$/utils/STMP.py" />
     <entry file="file://$PROJECT_DIR$/utils/encrypt.py" />
     <entry file="file://$PROJECT_DIR$/china_canton_railway/commands/__init__.py">
@@ -689,33 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1991">
-          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/jingzhou_city_gov_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -726,14 +690,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/meishan_city_gov_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1679" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/daqing_city_gov_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1556">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="342">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/zhuzhou_city_gov_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/common_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/changjiang_waterway_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-482">
+          <caret line="55" column="80" lean-forward="true" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/AirChina_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1504" />
       </provider>
     </entry>
   </component>

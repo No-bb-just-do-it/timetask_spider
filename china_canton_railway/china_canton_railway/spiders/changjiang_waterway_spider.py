@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from copy import deepcopy
-import time
-import re
 from utils.STMP import send_mail_when_error
 from utils.city_data import get_city_dict
 from utils.Regular_Expression import regularExpression, category
+from .common_spider import CommonSpider
 
 # http://www.cjhdj.com.cn/xxgk/wsgs/zbgg/ @ 长江航道局
-class changjiang_waterwaySpiderSpider(scrapy.Spider):
+class changjiang_waterwaySpiderSpider(CommonSpider):
     name = 'changjiang_waterway_spider'
     allowed_domains = ['cjhdj.com.cn']
 
@@ -21,7 +20,17 @@ class changjiang_waterwaySpiderSpider(scrapy.Spider):
         self.bidNotice_baseUrl = 'http://www.cjhdj.com.cn/xxgk/wsgs/zbgg'
         self.resultNotice_baseUrl = 'http://www.cjhdj.com.cn/xxgk/wsgs/zbjggs'
 
+        self.xpath_rule = {
+            'list_page': '//div[@class="gl_list1"]//ul/li',
+            'title_rule': './h3//a/text()',
+            'url_rule': './h3//a/@href',
+            'web_time_rule': './h3/span/text()',
+            'content_rule': r'<div class="bor1 pad_t20 mar_t15">(.*?)<div class="xl_icon"'
+        }
+
         self.error_count = 0
+        self.source_name = '长江航道局'
+        self.addr_id = ''
 
         self.start_urls = [
             # 共75页 每天更新跨度1页
@@ -53,7 +62,7 @@ class changjiang_waterwaySpiderSpider(scrapy.Spider):
         items = response.meta['items']
 
         # 获取所有招标信息的li标签
-        all_lis = response.xpath('//div[@class="gl_list1"]//ul/li')
+        all_lis = response.xpath(self.xpath_rule['list_page'])
 
         for each_li in all_lis:
             items['title'] = ''
@@ -63,15 +72,15 @@ class changjiang_waterwaySpiderSpider(scrapy.Spider):
             items['addr_id'] = ''
 
             try:
-                items['title'] = each_li.xpath('./h3//a/text()').extract_first()
+                items['title'] = each_li.xpath(self.xpath_rule['title_rule']).extract_first()
             except:
                 pass
 
             try:
                 if items['type_id'] == '38255':
-                    items['url'] = self.bidNotice_baseUrl + each_li.xpath('./h3//a/@href').extract_first()[1:]
+                    items['url'] = self.bidNotice_baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()[1:]
                 else:
-                    items['url'] = self.resultNotice_baseUrl + each_li.xpath('./h3//a/@href').extract_first()[1:]
+                    items['url'] = self.resultNotice_baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()[1:]
             except:
                 msg = self.name + ', 该爬虫详情页获取url失败'
                 send_mail_when_error(msg)
@@ -83,29 +92,9 @@ class changjiang_waterwaySpiderSpider(scrapy.Spider):
                 pass
 
             try:
-                items['web_time'] = each_li.xpath('./h3/span/text()').extract_first()
+                items['web_time'] = each_li.xpath(self.xpath_rule['web_time_rule']).extract_first()
             except:
                 pass
 
             yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
-
-    def parse_article(self, response):
-
-        items = response.meta['items']
-
-        try:
-            dirty_article = re.search(r'<div class="bor1 pad_t20 mar_t15">(.*?)<div class="xl_icon"', response.text, re.S).group(1)
-            clean_article = re.sub(self.regularExpression, ' ', dirty_article)
-            items['intro'] = clean_article
-        except:
-            pass
-
-        for city in self.city_dict:
-            if city in items['title']:
-                items['addr_id'] = self.city_dict[city]
-                break
-
-        # 文章来源
-        items["source_name"] = '长江航道局'
-        yield items
 

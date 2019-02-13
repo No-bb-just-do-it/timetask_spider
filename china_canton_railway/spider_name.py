@@ -4,9 +4,9 @@ spiders_name = {
         # 'AirChina_spider' : '中国国际航空公司',
         # 'changjiang_waterway_spider' : '长江航道局',
         # 'yueyang_city_gov_spider' : '岳阳市人民政府',                    # 已爬
-        # 'meishan_city_gov_spider' : '眉山市公共资源交易中心',
-        'daqing_city_gov_spider' : '大庆市公共资源交易网',
-        'zhuzhou_city_gov_spider' : '株洲市公共资源交易网',
+        # 'meishan_city_gov_spider' : '眉山市公共资源交易中心',                          ＃ 眉山爬虫较为特殊不修改
+        # 'daqing_city_gov_spider' : '大庆市公共资源交易网',
+        # 'zhuzhou_city_gov_spider' : '株洲市公共资源交易网',
         # 'longyan_city_gov_spider' : '眉山市公共资源交易网',              # 已爬
         # 'dalian_city_gov_spider' : '大连市公共资源',                         # 不通用所以不用改
         # 'foshan_nanhai_gov_spider' : '佛山市南海区人民政府网',           # 已爬

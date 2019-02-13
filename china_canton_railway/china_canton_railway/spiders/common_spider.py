@@ -97,5 +97,11 @@ class CommonSpider(scrapy.Spider):
         elif '更正' in items['title'] or '变更' in items['title']:
             items['type_id'] = '38256'
 
+        if items['addr_id'] == '':
+            for city in self.city_dict:
+                if city in items['title']:
+                    items['addr_id'] = self.city_dict[city]
+                    break
+
         items["source_name"] = self.source_name
         yield items
