@@ -6,9 +6,10 @@ from utils.Regular_Expression import regularExpression, regularExpression02, cat
 import re
 from utils.STMP import send_mail_when_error
 from utils.parse_content import pc
+from .common_spider import CommonSpider
 
 # http://ggb.sx.gov.cn/ @ 绍兴公共资源交易网
-class shaoxingSpiderSpider(scrapy.Spider):
+class shaoxingSpiderSpider(CommonSpider):
     name = 'shaoxing_city_gov_spider'
 
     def __init__(self):
@@ -95,21 +96,3 @@ class shaoxingSpiderSpider(scrapy.Spider):
                 pass
             # print(items)
             yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
-
-
-    def parse_article(self, response):
-        items = response.meta['items']
-        try:
-            items['intro'] = self.pc.get_clean_content(self.xpath_rule['content_rule'], self.regularExpression, self.regularExpression02, response.text)
-        except:
-            pass
-
-        items['addr_id'] = self.addr_id
-        if items['addr_id'] == '':
-            for city in self.city_dict:
-                if city in items['title']:
-                    items['addr_id'] = self.city_dict[city]
-                    break
-
-        items["source_name"] = self.source_name
-        yield items
