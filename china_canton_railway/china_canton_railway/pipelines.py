@@ -22,7 +22,7 @@ class UniversalPipeline(object):
         self.conn = pymysql.connect(host='47.106.13.62',
                                     user='root',
                                     password='jiayou875',
-                                    database='zbytb4',
+                                    database='test_demo',
                                     port=3306,
                                     charset='utf8')
         self.cur = self.conn.cursor()

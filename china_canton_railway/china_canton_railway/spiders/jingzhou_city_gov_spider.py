@@ -1,21 +1,12 @@
 # -*- coding: utf-8 -*-
-import scrapy
-from copy import deepcopy
-from utils.city_data import get_city_dict
-from utils.Regular_Expression import regularExpression, regularExpression02, category
-import re
-from utils.STMP import send_mail_when_error
-from utils.parse_content import pc
 from .common_spider import CommonSpider
+from utils.Regular_Expression import category
 
 # http://www.jzggzy.com/TPFront_JingZhou/jyxx_jz/006002/006002001/ @ 荆州市公共资源交易信息网
 class jingzhouSpiderSpider(CommonSpider):
     name = 'jingzhou_city_gov_spider'
 
     def __init__(self):
-
-        self.city_dict = get_city_dict()
-        self.category = category
 
         self.baseUrl = 'http://www.jzggzy.com'
 
@@ -30,17 +21,14 @@ class jingzhouSpiderSpider(CommonSpider):
         self.error_count = 0
         self.source_name = '锦州市公共资源交易管理办公室'
 
-        self.regularExpression = regularExpression
-        self.regularExpression02 = regularExpression02
-
         self.addr_id = '430'
+
+        self.category = category
 
         self.headers = {
             'Host': 'www.jzggzy.com',
             'Referer': 'http://www.jzggzy.com/TPFront_JingZhou/jyxx_jz/006002/006002002/?Paging=1'
         }
-
-        self.pc = pc
 
         self.start_urls = [
             # 政府采购 招标公告83页 更正公告6页 中标结果75页 废标公告6页（每日更新均一页）
