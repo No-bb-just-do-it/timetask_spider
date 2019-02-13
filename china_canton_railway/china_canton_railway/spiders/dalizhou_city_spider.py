@@ -46,14 +46,14 @@ class dalizhouSpiderSpider(scrapy.Spider):
 
         self.start_urls = [
             # 政府采购 采购公告 共146页 变更通知共46页 结果公告121页 每天更新跨度均1页
-            ('招标公告', 'https://www.dlggzy.cn/jyxx/zfcg/cggg?currentPage={}&area=013&scrollValue=0', 3),
-            ('变更公告', 'https://www.dlggzy.cn/jyxx/zfcg/gzsx?currentPage={}&area=013&scrollValue=0', 3),
-            ('招标结果', 'https://www.dlggzy.cn/jyxx/zfcg/zbjggs?currentPage={}&area=013&scrollValue=0', 3),
+            ('招标公告', 'https://www.dlggzy.cn/jyxx/zfcg/cggg?currentPage={}&area=013&scrollValue=0', 146),
+            ('变更公告', 'https://www.dlggzy.cn/jyxx/zfcg/gzsx?currentPage={}&area=013&scrollValue=0', 46),
+            ('招标结果', 'https://www.dlggzy.cn/jyxx/zfcg/zbjggs?currentPage={}&area=013&scrollValue=0', 121),
             # 工程建设 招标公告 共132页 变更通知 共90页 评标结果公示 共102页 中标结果公示 共146页 每天更新跨度均1页
-            ('招标公告', 'https://www.dlggzy.cn/jyxx/jsgcZbgg?currentPage={}&area=013&scrollValue=0', 3),
-            ('变更公告', 'https://www.dlggzy.cn/jyxx/jsgcBgtz?currentPage={}&area=013&scrollValue=0', 3),
-            ('招标结果', 'https://www.dlggzy.cn/jyxx/jsgcpbjggs?currentPage={}&area=013&scrollValue=0', 3),
-            ('招标结果', 'https://www.dlggzy.cn/jyxx/jsgcZbjggs?currentPage={}&area=013&scrollValue=0', 3),
+            ('招标公告', 'https://www.dlggzy.cn/jyxx/jsgcZbgg?currentPage={}&area=013&scrollValue=0', 132),
+            ('变更公告', 'https://www.dlggzy.cn/jyxx/jsgcBgtz?currentPage={}&area=013&scrollValue=0', 90),
+            ('招标结果', 'https://www.dlggzy.cn/jyxx/jsgcpbjggs?currentPage={}&area=013&scrollValue=0', 102),
+            ('招标结果', 'https://www.dlggzy.cn/jyxx/jsgcZbjggs?currentPage={}&area=013&scrollValue=0', 146),
         ]
 
 
