@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from copy import deepcopy
-import time
-import re
 from utils.STMP import send_mail_when_error
 from utils.city_data import get_city_dict
 from utils.Regular_Expression import regularExpression, regularExpression02, category
+from .common_spider import CommonSpider
 
 # http://www.dqgpc.gov.cn/jyxxZfcg/index_1.htm @ 大庆市公共资源交易网
-class daqingSpiderSpider(scrapy.Spider):
+class daqingSpiderSpider(CommonSpider):
     name = 'daqing_city_gov_spider'
     # allowed_domains = ['msggzy.org.cn']
 
@@ -21,7 +20,18 @@ class daqingSpiderSpider(scrapy.Spider):
 
         self.govPurchase_baseUrl = 'http://www.dqgpc.gov.cn'
 
+        self.source_name = '大庆市公共资源交易网'
+        self.addr_id = '413'
+        self.baseUrl = ''
         self.error_count = 0
+
+        self.xpath_rule = {
+            'list_page': '//div[@class="infor-con2 on"]//li',
+            'title_rule': './a/@title',
+            'url_rule': './a/@href',
+            'web_time_rule': './span/text()',
+            'content_rule': r'<body.*?>(.*?)</body>'
+        }
 
         self.start_urls = [
             # 政府采购公告 共843页 每天更新1页
@@ -89,23 +99,7 @@ class daqingSpiderSpider(scrapy.Spider):
             except:
                 pass
 
-            if '.doc' not in items['url'] or '.rar' not in items['url'] or '.jpg' not in items['url'] or '.docx' not in items['url']:
+            if '.doc' not in items['url'] and '.rar' not in items['url'] and '.jpg' not in items['url'] and '.docx' not in items['url']:
                 yield scrapy.Request(items['url'], callback = self.parse_article, meta = {'items' : deepcopy(items)}, headers = self.headers)
-
-
-    def parse_article(self, response):
-        items = response.meta['items']
-
-        try:
-            dirty_article = re.search(r'<body.*?>(.*?)</body>', response.text, re.S).group(1)
-            clean_article = re.sub(self.regularExpression, ' ', dirty_article)
-            items['intro'] = clean_article
-        except:
-            pass
-
-        items['addr_id'] = '413'
-        items["source_name"] = '大庆市公共资源交易网'
-
-        yield items
 
 

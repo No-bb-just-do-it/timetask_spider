@@ -50,12 +50,14 @@ class CommonSpider(scrapy.Spider):
             items['addr_id'] = ''
 
             try:
-                items['title'] = each_li.xpath(self.xpath_rule['title_rule']).extract_first().strip()
+                items['title'] = ''.join(each_li.xpath(self.xpath_rule['title_rule']).extract()).strip()
             except:
                 pass
 
             try:
                 items['url'] = self.baseUrl + each_li.xpath(self.xpath_rule['url_rule']).extract_first()
+                if items['url'] == None:
+                    raise Exception
             except:
                 msg = self.name + ', 该爬虫详情页获取url失败'
                 send_mail_when_error(msg)
@@ -76,7 +78,10 @@ class CommonSpider(scrapy.Spider):
     def parse_article(self, response):
         items = response.meta['items']
         try:
-            items['intro'] = self.pc.get_clean_content(self.xpath_rule['content_rule'], self.regularExpression, self.regularExpression02, response.text)
+            dirty_article = re.search(self.xpath_rule['content_rule'], response.text, re.S).group(1)
+            dirty_article = re.sub(regularExpression02, '>', dirty_article)
+            clean_article = re.sub(regularExpression, ' ', dirty_article)
+            items['intro'] = clean_article
         except:
             pass
 
@@ -86,6 +91,11 @@ class CommonSpider(scrapy.Spider):
                 if city in items['title']:
                     items['addr_id'] = self.city_dict[city]
                     break
+
+        if '中标' in items['title']:
+            items['type_id'] = '38257'
+        elif '更正' in items['title'] or '变更' in items['title']:
+            items['type_id'] = '38256'
 
         items["source_name"] = self.source_name
         yield items

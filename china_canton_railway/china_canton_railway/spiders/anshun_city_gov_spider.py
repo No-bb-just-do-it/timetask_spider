@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
-import scrapy
-from copy import deepcopy
 from utils.city_data import get_city_dict
 from utils.Regular_Expression import regularExpression, regularExpression02, category
-import re
-from utils.STMP import send_mail_when_error
 from utils.parse_content import pc
+from .common_spider import CommonSpider
 
 # http://www.ggzy.anshun.gov.cn/jyxx/003002/003002001/1.html @ 安顺市全国公共资源交易平台
-class anshunSpiderSpider(scrapy.Spider):
+class anshunSpiderSpider(CommonSpider):
     name = 'anshun_city_gov_spider'
 
     def __init__(self):
