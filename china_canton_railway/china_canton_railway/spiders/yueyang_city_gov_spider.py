@@ -26,8 +26,8 @@ class yueyangSpiderSpider(scrapy.Spider):
         self.start_urls = [
             # 政府采购739 每天两页 工程建设207 每天一页 医疗采购49 每天一页
             ('招标结果', 'http://www.yueyang.gov.cn/cxjs/zbtb/default.jsp?pager.offset={}&pager.desc=false', 3),
-            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
-            # ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24217/default.jsp?pager.offset={}&pager.desc=false', 3),
+            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24216/default.jsp?pager.offset={}&pager.desc=false', 3),
+            ('招标结果', 'http://www.yueyang.gov.cn/cxjs/12112/24215/24217/default.jsp?pager.offset={}&pager.desc=false', 3),
         ]
 
         self.headers = {

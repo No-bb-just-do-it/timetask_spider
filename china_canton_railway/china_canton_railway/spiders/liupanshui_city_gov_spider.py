@@ -43,9 +43,9 @@ class liupanshuiSpiderSpider(scrapy.Spider):
 
         self.start_urls = [
             # 政府采购 共252页 每天更新跨度 1页
-            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxzc/index_{}.jhtml', 252),
+            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxzc/index_{}.jhtml', 3),
             # 建设工程 共625页 每天更新跨度1页
-            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxgc/index_{}.jhtml', 625),
+            ('招标公告', 'http://ggzy.gzlps.gov.cn/jyxxgc/index_{}.jhtml', 3),
         ]
 
 

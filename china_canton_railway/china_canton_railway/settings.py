@@ -73,7 +73,7 @@ USER_AGENT_LIST = [
 # # 如果为False, 当程序结束了, 依然会请空Redis中的指纹和待爬的请求
 # SCHEDULER_PERSIST = True
 # # Redis数据库配置
-# REDIS_URL = "redis://120.79.14.9:6379/14"
+# REDIS_URL = "redis://120.79.14.9:6379/10"
 
 # 链接ip池
 pool = redis.ConnectionPool(host='120.77.159.174', port=6379, db=6)
