@@ -20,9 +20,7 @@ ROBOTSTXT_OBEY = False
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
-# Configure a delay for requests for the same website (default: 0)
-# See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
-# See also autothrottle settings and docs
+
 DOWNLOAD_DELAY = 0.3
 # The download delay setting will honor only one of:
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
@@ -47,16 +45,13 @@ DEFAULT_REQUEST_HEADERS = {
 #    'china_canton_railway.middlewares.ChinaCantonRailwaySpiderMiddleware': 543,
 #}
 
-# Enable or disable downloader middlewares
-# See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+
 DOWNLOADER_MIDDLEWARES = {
    'china_canton_railway.middlewares.RandomUserAgent': 543,
    # 'china_canton_railway.middlewares.RandomIpMiddleWare': 555,
 }
 
 
-# Configure item pipelines
-# See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'china_canton_railway.pipelines.UniversalPipeline': 300,
     # 'scrapy_redis.pipelines.RedisPipeline': 400,
