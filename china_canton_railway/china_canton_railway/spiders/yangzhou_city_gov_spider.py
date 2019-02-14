@@ -16,9 +16,9 @@ class yangzhouSpiderSpider(CommonSpider):
 
         self.xpath_rule = {
             'list_page' : '//div[@class="cont mt10"]/ul/li',
-            'title_rule': './/a/text()',
-            'url_rule': './/a/@href',
-            'web_time_rule': './/span/text()',
+            'title_rule' : './/a/text()',
+            'url_rule' : './/a/@href',
+            'web_time_rule' : './/span/text()',
             'content_rule' : r'<div class="content" id="zoom">(.*?)<!-- bottom begin-->'
         }
 
