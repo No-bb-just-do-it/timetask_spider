@@ -5,7 +5,7 @@ from .common_spider import CommonSpider
 from utils.Regular_Expression import category
 import scrapy
 
-# http://www.jzggzy.com/TPFront_JingZhou/jyxx_jz/006002/006002001/ @ 荆州市公共资源交易信息网
+# http://www.pesggzyjyxxw.com/jyxx/jsgcZbgg?currentPage=1&scrollValue=0/ @ 普洱市公共资源交易电子服务系统
 class puerSpiderSpider(CommonSpider):
     name = 'puer_city_gov_spider'
 
