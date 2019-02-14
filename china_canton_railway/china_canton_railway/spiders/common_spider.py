@@ -72,6 +72,7 @@ class CommonSpider(scrapy.Spider):
                 items['web_time'] = each_li.xpath(self.xpath_rule['web_time_rule']).extract_first().strip()
             except:
                 pass
+            # print(items)
             yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
 
 

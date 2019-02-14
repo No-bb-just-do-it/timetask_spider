@@ -20,5 +20,6 @@ spiders_name = {
         # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',
         # 'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
         # 'yulin_city_gov_spider' : '玉林市人民政府门户网站',
-        'puer_city_gov_spider' : '普洱市公共资源交易电子服务系统',
+        # 'puer_city_gov_spider' : '普洱市公共资源交易电子服务系统',         # 已爬
+        'yangzhou_city_gov_spider' : '扬州市政府采购网'
 }

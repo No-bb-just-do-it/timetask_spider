@@ -9,6 +9,10 @@ class jingzhouSpiderSpider(CommonSpider):
     def __init__(self):
 
         self.baseUrl = 'http://www.jzggzy.com'
+        self.error_count = 0
+        self.source_name = '锦州市公共资源交易管理办公室'
+        self.addr_id = '430'
+        self.category = category
 
         self.xpath_rule = {
             'list_page' : '//div[@class="con-list"]/table//tr[@height="24"]',
@@ -17,13 +21,6 @@ class jingzhouSpiderSpider(CommonSpider):
             'web_time_rule': './td[4]//text()',
             'content_rule' : r'id="TDContent" style="text-align:left;padding:10px;">(.*?)<!--网站底部-->'
         }
-
-        self.error_count = 0
-        self.source_name = '锦州市公共资源交易管理办公室'
-
-        self.addr_id = '430'
-
-        self.category = category
 
         self.headers = {
             'Host': 'www.jzggzy.com',
