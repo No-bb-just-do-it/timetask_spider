@@ -23,5 +23,6 @@ spiders_name = {
         # 'puer_city_gov_spider' : '普洱市公共资源交易电子服务系统',         # 已爬
         # 'yangzhou_city_gov_spider' : '扬州市政府采购网',                 # done
         # 'changchun_city_gov_spider' : '长春市公共资源交易网',             # done
-        'jiaxing_city_gov_spider' : '嘉兴市公共资源交易中心'
+        # 'jiaxing_city_gov_spider' : '嘉兴市公共资源交易中心',
+        'jinhua_city_gov_spider' : '金华市公共资源交易中心'      # 较为特殊内容是图片
 }
