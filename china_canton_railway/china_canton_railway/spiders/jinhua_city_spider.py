@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
 from copy import deepcopy
-
 import scrapy
-
 from .common_spider import CommonSpider
 from utils.Regular_Expression import category, regularExpression02, regularExpression
 
 
-# http://www.jxzbtb.cn/jygg/003002/1.html @ 金华市公共资源交易中心
+# http://www.jhztb.gov.cn/jhztb/zfcgcggg/index_1.htm @ 金华市公共资源交易中心
 class jinhuaSpiderSpider(CommonSpider):
     name = 'jinhua_city_gov_spider'
 

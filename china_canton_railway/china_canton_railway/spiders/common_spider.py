@@ -76,33 +76,33 @@ class CommonSpider(scrapy.Spider):
             yield scrapy.Request(items['url'], callback = self.parse_article, headers = self.headers, meta = {'items' : deepcopy(items)})
 
 
-    # def parse_article(self, response):
-    #     items = response.meta['items']
-    #     try:
-    #         dirty_article = re.search(self.xpath_rule['content_rule'], response.text, re.S).group(1)
-    #         dirty_article = re.sub(regularExpression02, '>', dirty_article)
-    #         clean_article = re.sub(regularExpression, ' ', dirty_article)
-    #         items['intro'] = clean_article
-    #     except:
-    #         pass
-    #
-    #     items['addr_id'] = self.addr_id
-    #     if items['addr_id'] == '':
-    #         for city in self.city_dict:
-    #             if city in items['title']:
-    #                 items['addr_id'] = self.city_dict[city]
-    #                 break
-    #
-    #     if '中标' in items['title'] or '成交' in items['title'] or '结果' in items['title']:
-    #         items['type_id'] = '38257'
-    #     elif '更正' in items['title'] or '变更' in items['title']:
-    #         items['type_id'] = '38256'
-    #
-    #     if items['addr_id'] == '':
-    #         for city in self.city_dict:
-    #             if city in items['title']:
-    #                 items['addr_id'] = self.city_dict[city]
-    #                 break
-    #
-    #     items["source_name"] = self.source_name
-    #     yield items
+    def parse_article(self, response):
+        items = response.meta['items']
+        try:
+            dirty_article = re.search(self.xpath_rule['content_rule'], response.text, re.S).group(1)
+            dirty_article = re.sub(regularExpression02, '>', dirty_article)
+            clean_article = re.sub(regularExpression, ' ', dirty_article)
+            items['intro'] = clean_article
+        except:
+            pass
+
+        items['addr_id'] = self.addr_id
+        if items['addr_id'] == '':
+            for city in self.city_dict:
+                if city in items['title']:
+                    items['addr_id'] = self.city_dict[city]
+                    break
+
+        if '中标' in items['title'] or '成交' in items['title'] or '结果' in items['title']:
+            items['type_id'] = '38257'
+        elif '更正' in items['title'] or '变更' in items['title']:
+            items['type_id'] = '38256'
+
+        if items['addr_id'] == '':
+            for city in self.city_dict:
+                if city in items['title']:
+                    items['addr_id'] = self.city_dict[city]
+                    break
+
+        items["source_name"] = self.source_name
+        yield items
