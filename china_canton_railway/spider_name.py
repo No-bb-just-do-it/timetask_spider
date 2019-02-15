@@ -15,9 +15,9 @@ spiders_name = {
         # 'jinzhou_city_gov_spider' : '锦州市公共资源交易管理办公室',         # 已爬
         # 'jingzhou_city_gov_spider' : '荆州市公共资源交易信息网',
         # 'anshun_city_gov_spider' : '安顺市全国公共资源交易平台',
-        # 'hefei_city_gov_spider' : '合肥市政府信息公开网',               # 写着写着502错误(已恢复)
+        # 'hefei_city_gov_spider' : '合肥市政府信息公开网',                # done 写着写着502错误(已恢复)
         # 'dalizhou_city_gov_spider' : '大理州公共资源交易电子服务系统',     # 已爬
-        # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',
+        # 'shaoxing_city_gov_spider' : '绍兴公共资源交易网',               # done
         # 'liuzhou_city_gov_spider' : '柳州市公共资源交易管理办公室',        # 已爬
         # 'yulin_city_gov_spider' : '玉林市人民政府门户网站',               # done
         # 'puer_city_gov_spider' : '普洱市公共资源交易电子服务系统',         # 已爬
