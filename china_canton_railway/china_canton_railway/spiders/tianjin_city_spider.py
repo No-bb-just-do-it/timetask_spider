@@ -11,7 +11,7 @@ from utils.encode_url import aes
 
 # http://ggzy.xzsp.tj.gov.cn/jyxxzfcg/index.jhtml @ 天津市公共资源交易网
 class tianjinSpiderSpider(CommonSpider):
-    name = 'tianjin_city_gov_spider'
+    name = 'tianjin_city_spider'
 
     def __init__(self):
 

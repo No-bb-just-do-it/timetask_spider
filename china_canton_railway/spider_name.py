@@ -26,5 +26,5 @@ spiders_name = {
         # 'jiaxing_city_gov_spider' : '嘉兴市公共资源交易中心',            # done
         # 'jinhua_city_gov_spider' : '金华市公共资源交易中心',      # 较为特殊内容是图片 # done
         # 'fuzhou_city_gov_spider' : '福州市公共资源交易网',               # done
-        'tianjin_city_gov_spider' : '天津市公共资源交易网'
+        'tianjin_city_spider' : '天津市公共资源交易网'
 }
