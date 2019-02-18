@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a52b7828-6079-4a8c-a26a-f1b7a837b58f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/china_canton_railway/spiders/tianjin_city_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/ase_encryption.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/china_canton_railway/spiders/tianjin_city_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/china_canton_railway/spiders/tianjin_city_spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/tianjin_city_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="121" column="52" lean-forward="true" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
+            <state relative-caret-position="318">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -460,12 +457,12 @@
       <workItem from="1550195941796" duration="15288000" />
       <workItem from="1550228548127" duration="64000" />
       <workItem from="1550280313661" duration="776000" />
-      <workItem from="1550456056485" duration="5300000" />
+      <workItem from="1550456056485" duration="5355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222835000" />
+    <option name="totallyTimeSpent" value="222890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/china_canton_railway/spiders/tianjin_city_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="121" column="52" lean-forward="true" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
+        <state relative-caret-position="318">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>

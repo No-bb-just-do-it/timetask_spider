@@ -82,12 +82,12 @@ class tianjinSpiderSpider(CommonSpider):
                     raise Exception
             except:
                 msg = self.name + ', 该爬虫详情页获取url失败'
-                # send_mail_when_error(msg)
+                send_mail_when_error(msg)
                 self.error_count += 1
                 if self.error_count > 3:
                     quit()
                     msg = self.name + ', 该爬虫因详情页获取失败被暂停'
-                    # send_mail_when_error(msg)
+                    send_mail_when_error(msg)
                 pass
 
             try:
